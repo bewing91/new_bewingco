@@ -458,6 +458,10 @@ h1 span {
   text-align: center;
 }
 
+.result_deets {
+  min-height: 72px;
+}
+
 .result_scrn img {
   padding: 16px 0px 16px 0px;
 }
