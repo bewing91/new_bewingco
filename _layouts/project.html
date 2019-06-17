@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navbar.html %}
+    <div class="proj_thumb" style="background-image: url(/img/{{ page.thumbnail }});">
+    </div>
+    <div class="content">
+      <div class="container">
+        <br />
+        <br />
+        <h1>{{ page.project_name }}</h1>
+
+        <div class="row">
+          <div id="my_role" class="col-md-4">
+            <h4>My Role</h4>
+            {{ page.my_role }}
+            <br />
+            <i>Using</i>
+            </br>
+            {{ page.tools }}
+          </div>
+          <div id="challenge" class="col-md-8">
+            <h4>The Challenge</h4>
+            <br />
+          </div>
+        </div>
+        <div class="row">
+          <div id="solution" class="col">
+            <h4>The Solution</h4>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
