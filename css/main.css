@@ -472,7 +472,7 @@ h1 span {
 }
 
 #usability img {
-  max-width: 100%;
+  max-width: 85%;
   height: 85%;
 }
 
@@ -487,6 +487,10 @@ h1 span {
 
 #painpts img {
   max-width: 90%;
+}
+
+.painpt {
+  padding-bottom: 32px;
 }
 
 #prototype h6 {
