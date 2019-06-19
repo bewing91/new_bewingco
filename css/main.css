@@ -1,12 +1,17 @@
 /* Global */
 
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: ;
+}
+
+
 .container {
   width:85%;
 }
 
 h3 {
-  padding-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   /* text-align: center; */
 }
 
@@ -48,22 +53,21 @@ border: 2px solid black;
 }
 
 #cover a:hover {
-  color: lightgray;
+  color: #f1f1f1;
 }
 
 #headshot {
-  padding-top: 100px;
-  padding-bottom: 40px;
-  /* text-align: center; */
+  margin-top: 72px;
 }
 
 #description {
+  margin-top: 24px;
   width: 35%;
 }
 
 @media screen and (max-width: 490px) {
   #description {
-    width: 54%;
+    width: 56%;
   }
 }
 
@@ -71,7 +75,7 @@ border: 2px solid black;
   width: 83%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575.98px) {
   #subdescription {
     display: none;
   }
@@ -80,7 +84,7 @@ border: 2px solid black;
 h1 span {
   background-color: #17A2B8;
   border: solid #17A2B8;
-  border-width: 0px 15px;
+  border-width: 0px 16px;
   color: white;
 }
 
@@ -95,6 +99,15 @@ h1 span {
   #navmenu {
     display: none;
   }
+}
+
+.navbar-brand {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.navbar-brand h1 {
+  margin-bottom: 0px;
 }
 
 #navbar .nav-link {
@@ -160,8 +173,8 @@ h1 span {
 /* Portfolio section */
 
 #portfolio {
-  padding-top:30px;
-  padding-bottom: 30px;
+  padding-top:56px;
+  padding-bottom: 32px;
   margin-bottom: 0px;
   max-width: 100%;
 }
@@ -178,6 +191,10 @@ h1 span {
 
 .card a {
   color: black;
+}
+
+.card img {
+  max-width: 100%;
 }
 
 .projoverlay {
@@ -326,8 +343,8 @@ h1 span {
 /* Connect Section */
 
 #social {
-  margin-top: 60px;
-  margin-bottom:20px;
+  margin-top: 64px;
+  margin-bottom:24px;
   color: gray;
 }
 
@@ -348,7 +365,7 @@ h1 span {
 /* Project page */
 
 .proj_thumb {
-  margin-top: 82px;
+  margin-top: 80px;
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -368,7 +385,7 @@ h1 span {
 }
 
 .projlogo {
-  margin: 20px;
+  margin: 16px;
 }
 
 #projheader {
@@ -433,7 +450,7 @@ h1 span {
 }
 
 .casesection {
-  padding-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .casesection h5 {
@@ -466,14 +483,16 @@ h1 span {
   padding: 16px 0px 16px 0px;
 }
 
+#jbtd {
+  margin-bottom: 36px;
+}
+
 #jbtd img {
-  height: 85%;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 #usability img {
-  max-width: 85%;
-  height: 85%;
+  width: 100%;
 }
 
 #analysis img {
@@ -501,8 +520,9 @@ h1 span {
 /* About */
 
 #aboutme {
-  margin-top: 82px;
+  margin-top: 72px;
   padding: 80px 0px;
+  background: #f1f1f1;
 }
 
 .headshot {

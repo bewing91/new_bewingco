@@ -2,26 +2,39 @@
 layout: main
 ---
 
+
+
 <section id="cover">
+
+  <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="navbar-container">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse justify-content-end">
+              <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ "/#portfolio" | prepend: site.baseurl }}" style="text-shadow: gray 2px 6px 16px;">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ "/about.html" | prepend: site.baseurl }}" style="text-shadow: gray 2px 6px 16px;">About</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
   <div id="headshot" class="container">
     Hey, I'm
     <h1><span>Ben Ewing.</span></h1>
     <div id="description">
-      <h3>A Designer, maker, do-er and musician.</h3>
+      <h3>A Designer, do-er and musician.</h3>
       <p id="subdescription">
         With a background in Product Marketing and Product.
       </p>
     </div>
-  </div>
-  <div id="navmenu">
-    <ul class="nav justify-content-end">
-      <li class="nav-item active">
-        <a class="nav-link" href="#portfolio">Projects</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#social">Connect</a>
-      </li>
-    </ul>
   </div>
 </section>
 
@@ -30,14 +43,13 @@ layout: main
 <div class="container">
   <h3>This is some of my previous work</h3>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card">
-        <a href="/projects/senselander.html">
+        <a href="{{ '/projects/senselander.html' | relative_url }}">
           <div class="projoverlayinv">
             <span class="projinfo"></span>
-
           </div>
-          <img src="img/projects/plander_thumb.jpg" width="100%">
+          <img src="img/soundcloud/project_placeholder3.gif">
         </a>
       </div>
       <h5>Prospecting Landing Page</h5>
@@ -48,13 +60,13 @@ layout: main
         <span class="skilltag">Google Analytics</span>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card">
-        <a href="{{ "/projects/soundcloud.html" | prepend: site.baseurl }}">
+        <a href="{{ '/projects/soundcloud.html' | relative_url }}">
           <div class="projoverlayinv">
             <span class="projinfo"></span>
           </div>
-          <img src="img/projects/digital_thread_thumb.jpg" width="100%">
+          <img src="img/soundcloud/project_placeholder3.gif">
         </a>
       </div>
       <h5>Soundcloud</h5>
@@ -64,13 +76,13 @@ layout: main
         <span class="skilltag">Project Management</span>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card">
         <a href="#">
           <div class="projoverlayinv">
             <span class="projinfo"></span>
           </div>
-          <img src="img/projects/bewing_web_thumb.jpg" width="100%">
+          <img src="img/soundcloud/project_placeholder3.gif">
         </a>
       </div>
       <h5>bewing.co Website</h5>
@@ -83,18 +95,4 @@ layout: main
     </div>
   </div>
 </div>
-</section>
-
-<section id="music">
-  <div class="container">
-    <h3>Why yes, you can listen to my music. I thought you'd never ask.</h3>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="">
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/546461844&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
