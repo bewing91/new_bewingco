@@ -496,8 +496,11 @@ h1 span {
 }
 
 #analysis img {
-  max-width: 100%;
-  height: 85%;
+  max-width: 90%;
+}
+
+#analysis {
+  margin-bottom: 36px;
 }
 
 #painpts_desc {
