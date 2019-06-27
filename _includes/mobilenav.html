@@ -1,0 +1,25 @@
+<script>
+/* Open */
+function openNav() {
+  document.getElementById("mobileNav").style.display = "block";
+  document.getElementByClass("content").style.overflow = "hidden";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("mobileNav").style.display = "none";
+}
+</script>
+
+<!-- The overlay -->
+<div id="mobileNav" class="overlay">
+ <!-- Button to close the overlay navigation -->
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ <!-- Overlay content -->
+ <div class="overlay-content">
+   <a href="{{ '/index.html#portfolio' | relative_url }}">Work</a>
+   <a href="{{ '/about.html' | relative_url }}">About</a>
+ </div>
+
+</div>

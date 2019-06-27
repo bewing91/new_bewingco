@@ -365,7 +365,7 @@ h1 span {
 /* Project page */
 
 .proj_thumb {
-  margin-top: 80px;
+  margin-top: 72px;
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -373,11 +373,21 @@ h1 span {
 }
 
 #my_role {
-  padding-bottom: 20px;
+  margin-bottom: 16px;
+}
+
+#project_intro {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 48px;
+}
+
+#project_intro #scope {
+  margin-bottom: 16px;
 }
 
 #challenge {
-  padding-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 #solution {
@@ -443,6 +453,12 @@ h1 span {
   font-weight: 600;
 }
 
+#final_designs {
+  padding: 16px 0px;
+  background: #f1f1f1;
+  text-align: center;
+}
+
 /* Casestudy */
 
 .headlines {
@@ -461,6 +477,12 @@ h1 span {
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 48px;
+}
+
+@media screen and (max-width: 767.8px) {
+  #scope {
+    margin-bottom: 16px;
+  }
 }
 
 #results_desc {
@@ -531,4 +553,68 @@ h1 span {
 .headshot {
   border-radius: 50%;
   width: 75%;
+}
+
+#music {
+  padding: 80px 0px;
+}
+
+
+/* Overlay Nav */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.96);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  padding: 0px !important;
+  position: absolute;
+  top: 0px;
+  right: 32px;
+  font-size: 40px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 0px;
+    right: 32px;
+  }
 }
