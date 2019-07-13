@@ -27,13 +27,13 @@ layout: main
 
 
   <div id="headshot" class="container">
-    Hey, I'm
+    <span class="intro">Hey, I'm</span>
     <h1><span>Ben Ewing.</span></h1>
     <div id="description">
-      <h3>A Designer, do-er and musician.</h3>
-      <p id="subdescription">
-        With a background in Product Marketing and Product.
-      </p>
+      <h3>A Product Designer with a background in product and marketing.</h3>
+      <!--<span class="intro">
+        with a background in Product Marketing and Product.
+      </span>-->
     </div>
   </div>
 </section>
@@ -41,23 +41,20 @@ layout: main
 <section id="portfolio" class="">
 
 <div class="container">
-  <h3>This is some of my previous work</h3>
+  <h3 id="portfolioheader">Here are a few projects I worked on</h3>
   <div class="row">
     <div class="col-md-6">
-      <div class="card">
+      <div id="sensecard" class="card">
         <a href="{{ '/projects/senselander.html' | relative_url }}">
           <div class="projoverlayinv">
             <span class="projinfo"></span>
           </div>
-          <img src="img/soundcloud/project_placeholder3.gif">
         </a>
+        <img src="{{ '/img/senselander_macbook-iphonex.png' | relative_url }}">
       </div>
-      <h5>Prospecting Landing Page</h5>
-      <div class="projorg">Sense</div>
-      <div class="skilltagset">
-        <span class="skilltag">HTML & CSS</span>
-        <span class="skilltag">Copywriting</span>
-        <span class="skilltag">Google Analytics</span>
+      <div class="cardinfo">
+        <h4>Increasing top of funnel engagement</h4>
+        <div>Responsive Web &nbsp; • &nbsp; <a href="http://www.sense.com">Sense</a></div>
       </div>
     </div>
     <div class="col-md-6">
@@ -66,27 +63,42 @@ layout: main
           <div class="projoverlayinv">
             <span class="projinfo"></span>
           </div>
-          <img src="img/soundcloud/project_placeholder3.gif">
+
         </a>
       </div>
-      <h5>Soundcloud</h5>
-      <div class="projorg">Case Study</div>
-      <div class="skilltagset">
-        <span class="skilltag">Copywriting</span>
-        <span class="skilltag">Project Management</span>
+      <div class="cardinfo">
+        <h4>Making discovery easier on Soundcloud</h4>
+        <div>Usability Study &nbsp; • &nbsp; <a href="http://www.soundcloud.com">Soundcloud</a></div>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card">
-        <a href="#">
+      <div id="craftcard" class="card">
+        <a href="{{ '/projects/craftco.html' | relative_url }}">
           <div class="projoverlayinv">
             <span class="projinfo"></span>
           </div>
-          <img src="img/soundcloud/project_placeholder3.gif">
+          <!-- <img src="img/soundcloud/project_placeholder3.gif"> -->
         </a>
       </div>
-      <h5>bewing.co Website</h5>
-      <div class="projorg">Personal Project</div>
+      <h5>Craft.co</h5>
+      <div class="projorg">Native iOS App</div>
+      <div class="skilltagset">
+        <span class="skilltag">HTML & CSS</span>
+        <span class="skilltag">Copywriting</span>
+        <span class="skilltag">Google Analytics</span>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="" class="card">
+        <a href="{{ '/projects/craftco.html' | relative_url }}">
+          <div class="projoverlayinv">
+            <span class="projinfo"></span>
+          </div>
+          <!-- <img src="img/soundcloud/project_placeholder3.gif"> -->
+        </a>
+      </div>
+      <h5>Craft.co</h5>
+      <div class="projorg">Native iOS App</div>
       <div class="skilltagset">
         <span class="skilltag">HTML & CSS</span>
         <span class="skilltag">Copywriting</span>

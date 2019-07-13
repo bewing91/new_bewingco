@@ -1,52 +1,51 @@
+---
+---
+
+
 /* Global */
-
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: ;
-}
 
 
 .container {
   width:85%;
 }
 
-h3 {
-  margin-bottom: 24px;
-  /* text-align: center; */
-}
-
 a:hover {
   text-decoration: none;
 }
 
-/* Cover Intro Section */
-/*
-h3::after {
-content: ' ';
-display: block;
-width: 50px;
-margin: 10px auto -10px 0;
-border: 2px solid black;
-}
-*/
+/* Cover */
+
 #cover {
-  height: 480px;
+  height: 640px;
   max-width: 100%;
   position: relative;
   background-image: linear-gradient(0deg,rgba(38,38,38,0.1),rgba(38,38,38,0.1)),url("../img/backgroundimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 75%;
   background-color: #262626;
   color: white;
 }
-
 
 @media screen and (max-width: 490px) {
   #cover {
     background-position: 35% 50%;
   }
 }
+
+
+#cover {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+
+
 
 #cover a {
   color: white;
@@ -57,23 +56,34 @@ border: 2px solid black;
 }
 
 #headshot {
-  margin-top: 72px;
+  margin-top: 104px;
+
+  .intro {
+    font-size: 20px;
+  }
+
+  #description {
+    margin-top: 24px;
+    width: 35%;
+  }
+
+  #subdescription {
+    width: 83%;
+  }
+
 }
 
-#description {
-  margin-top: 24px;
-  width: 35%;
-}
 
 @media screen and (max-width: 490px) {
-  #description {
+  #headshot {
+    margin-top: 64px;
+  }
+
+  #headshot #description {
     width: 56%;
   }
 }
 
-#subdescription {
-  width: 83%;
-}
 
 @media screen and (max-width: 575.98px) {
   #subdescription {
@@ -179,14 +189,27 @@ h1 span {
   max-width: 100%;
 }
 
+#portfolioheader{
+  margin-bottom: 36px;
+}
+
+#craftcard {
+  background-color: #46305D !important;
+}
+
+#sensecard {
+  background-color: #f9461c !important;
+  display: flex;
+}
+
 .card {
-  margin-bottom: 8px;
+  height: 360px;
+  margin-bottom: 16px;
   border: 0px;
   background-color: gray;
   border-radius: 0rem;
   text-align: center;
   color: #ffffff;
-  position:relative
 }
 
 .card a {
@@ -194,7 +217,12 @@ h1 span {
 }
 
 .card img {
-  max-width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.cardinfo {
+  margin-bottom: 36px;
 }
 
 .projoverlay {
@@ -235,10 +263,6 @@ h1 span {
 }
 
 .projoverlayinv:hover {
-  opacity: .6;
-}
-
-.projoverlayinv: {
   opacity: .6;
 }
 
@@ -363,6 +387,10 @@ h1 span {
 
 
 /* Project page */
+
+.projsection {
+  margin-bottom: 36px;
+}
 
 .proj_thumb {
   margin-top: 72px;
@@ -505,8 +533,12 @@ h1 span {
   padding: 16px 0px 16px 0px;
 }
 
+#taskchart {
+  text-align: center;
+}
+
 #jbtd {
-  margin-bottom: 36px;
+  margin-bottom: 48px;
 }
 
 #jbtd img {

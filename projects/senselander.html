@@ -1,8 +1,8 @@
 ---
 layout: project
 project_name: Sense Landing Page
-headline: Improving top of funnel enagement
-scope: User Experience Design, Visual Design, Copywriting
+headline: Increasing top of funnel enagement
+scope: User Experience Design, Visual Design, Copywriting, Coding
 tools: Sketch, Photoshop, HTML & CSS, Bootstrap, CrazyEgg, Google Analytics
 thumbnail: newlander_projthumb.jpg
 challenge: >
@@ -18,25 +18,30 @@ color: '#f9461c'
 <div class="process">
   <h3>Process</h3>
   <div id="solution">
-    <h5>Research</h5>
-    <p>I started by conducting some qualitative and quantitative research.
-      I reviewed our database of customer testimonials and communications with customers within the company online forums.
-      I wanted to understand how customers themselves talked about the product and where they found value in it.
-      I also reviewed comments to our Facebook ads to identify points of confusion with our current ad copy and landing page.</p>
-      <p>With an understanding of how customers and prospective customers thought about the product, I used Google Analytics and a scroll depth tracker called CrazyEgg to see how prospective customers were interacting with the current landing page and website.</p>
-    <h5>Analysis</h5>
-    <p>After conducting research, I came away with a few key insights:
-      <ul>
-        <li>To most people, the biggest benefit of Sense is the money that they save on electrical bills through energy efficiency improvements.</li>
-        <li>People are skeptical as to whether the product will work. The background and expertise of Sense’s team and social proof are helpful in giving the product credibility.</li>
-        <li>Prospective customers want to do more research on the product before purchasing. They want to learn more before they’re ready to purchase.</li>
-        <li>Prospective customers are interested in how the product works. They tend to be detail oriented and tech enthusiasts.</li>
-      </ul>
-    <h5>Ideation & Design</h5>
+    <div id="research" class="projsection">
+      <h5>Research</h5>
+      <p>I started by conducting some qualitative and quantitative research.
+        I reviewed our database of customer testimonials and communications with customers within the company's online forums.
+        I wanted to understand how customers themselves talked about the product and where they found value in it.
+        I also reviewed comments to our Facebook ads to identify points of confusion with our current ad copy, landing page, and overall product.</p>
+        <p>With an understanding of how customers and prospective customers thought about the product, I used Google Analytics and a scroll depth tracker called CrazyEgg to see how prospective customers were interacting with the current landing page and website.</p>
+    </div>
+    <div class="projsection">
+      <h5>Analysis</h5>
+      <p>After conducting research, I came away with a few key insights:
+        <ul>
+          <li>To most people, the biggest benefit of Sense is the money that they save on electrical bills through energy efficiency improvements.</li>
+          <li>People are skeptical as to whether the product will work. The background and expertise of Sense’s team and social proof are helpful in giving the product credibility.</li>
+          <li>Prospective customers want to do more research on the product before purchasing. They want to learn more before they’re ready to purchase.</li>
+          <li>Prospective customers are interested in how the product works. They tend to be detail oriented and tech enthusiasts.</li>
+        </ul>
+    </div>
+    <div class="projsection">
+      <h5>Ideation & Design</h5>
 
-    <p>
-      Messaging-wise, the old prospecting landing page described <i>what</i> Sense was, but didn't really address <i>why</i> a prospective customer should care about it. In creating this landing page, I really wanted to speak to the value propositions that Sense provides so that the prospective customer can viscerally understand how purchasing Sense will help them. After the value propositions, some information on how Sense works is displayed. This information is more descriptive than the previous page, and aims to show rather than tell, with app screenshots and an image of the monitor installed in an electrical panel.</p>
-    </p>
+      <p>
+        Messaging-wise, the old prospecting landing page described <i>what</i> Sense was, but didn't really address <i>why</i> a prospective customer should care about it. In creating this landing page, I really wanted to speak to the value propositions that Sense provides so that the prospective customer can viscerally understand how purchasing Sense will help them. After the value propositions, some information on how Sense works is displayed. This information is more descriptive than the previous page, and aims to show rather than tell, with app screenshots and an image of the monitor installed in an electrical panel.</p>
+      </p>
 
       <p>As I moved from the wireframe to the hi-fidelty design, I made use of Sense's existing brand guidelines and design patterns in order to ensure that the landing page fit seamlessly with the brand and within the customer journey.</p>
       <div id="final_designs" class="row">
@@ -49,6 +54,7 @@ color: '#f9461c'
           <img src="{{ '/img/newlander.png' | relative_url }}" style="width:98%;">
         </div>
       </div>
+    </div>
     <h5>Implementation and Testing</h5>
       <p>Once the design was finalized, I implemented the designs and built the landing page using HTML and CSS, making use of Bootstrap and Jekyll.
         I made sure to add the Google Analytics tracking snippet and Facebook’s pixel in order to be able to track the success of the page.</p>
