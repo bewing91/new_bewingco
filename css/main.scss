@@ -4,9 +4,16 @@
 
 /* Global */
 
-
+/*
 .container {
   width:85%;
+}
+*/
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
 a:hover {
@@ -33,7 +40,6 @@ a:hover {
   }
 }
 
-
 #cover {
   h1 {
     font-size: 3.5rem;
@@ -43,9 +49,6 @@ a:hover {
     font-size: 2rem;
   }
 }
-
-
-
 
 #cover a {
   color: white;
@@ -194,12 +197,16 @@ h1 span {
 }
 
 #craftcard {
-  background-color: #46305D !important;
+  background-color: #434D4F !important;
 }
 
 #sensecard {
-  background-color: #f9461c !important;
+  background-color: #f1f1f1 !important;
   display: flex;
+}
+
+#outschoolcard {
+  background-color: #A1A1A1 !important;
 }
 
 .card {
@@ -212,13 +219,26 @@ h1 span {
   color: #ffffff;
 }
 
+@media screen and (max-width: 490px) {
+  .card {
+    height: 300px;
+  }
+}
+
 .card a {
   color: black;
 }
 
 .card img {
-  max-width: 80%;
+  max-width: 84%;
   margin: auto;
+}
+
+.projlogo {
+  height: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
 }
 
 .cardinfo {
@@ -405,8 +425,6 @@ h1 span {
 }
 
 #project_intro {
-  padding-top: 16px;
-  padding-bottom: 16px;
   margin-bottom: 48px;
 }
 
@@ -418,11 +436,30 @@ h1 span {
   margin-bottom: 16px;
 }
 
+#project_intro:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    padding-top: 16px;
+    border-bottom: 1px solid black;
+}
+
+#project_intro:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    padding-bottom: 16px;
+    border-top: 1px solid black;
+}
+
+
 #solution {
 
 }
 
-.projlogo {
+.navlogo {
   margin: 16px;
 }
 
@@ -578,7 +615,7 @@ h1 span {
 
 #aboutme {
   margin-top: 72px;
-  padding: 80px 0px;
+  padding: 120px 0px;
   background: #f1f1f1;
 }
 
@@ -589,6 +626,10 @@ h1 span {
 
 #music {
   padding: 80px 0px;
+
+  h3 {
+    margin-bottom: 40px;
+  }
 }
 
 

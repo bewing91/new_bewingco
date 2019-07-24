@@ -4,7 +4,7 @@
   {% include head.html %}
   <body>
     {% include navbar.html %}
-    <div class="proj_thumb" style="background-image: url({{ site.baseurl }}/img/{{ page.thumbnail }}); background: {{ page.color }};">
+    <div class="proj_thumb">
       <div class="container" style="height: 100%; text-align: center;">
         <img src="{{ site.baseurl }}/img/{{ page.hero_scrn }}" style="margin-top: 50px; max-height: 80%; max-width:100%;">
       </div>
@@ -14,10 +14,10 @@
       <div class="container">
         <div class="headlines">
           <h1>{{ page.project_name }}</h1>
-          <h5>{{ page.headline }}</h5>
+          <h4><span style="color: {{ page.color }}">{{ page.company }}</span>  &nbsp; • &nbsp; {{ page.type }}</h4>
         </div>
 
-        <div id="project_intro" class="row" style="background: #f1f1f1;">
+        <div id="project_intro" class="row">
           <div class="col-md-4">
             <div id="scope">
               <h5>The Scope</h5>
