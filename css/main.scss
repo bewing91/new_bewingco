@@ -206,14 +206,14 @@ h1 span {
 }
 
 #outschoolcard {
-  background-color: #A1A1A1 !important;
+  background-color: #f1f1f1 !important;
 }
 
 .card {
   height: 360px;
   margin-bottom: 16px;
   border: 0px;
-  background-color: gray;
+  background-color: #f1f1f1;
   border-radius: 0rem;
   text-align: center;
   color: #ffffff;
@@ -442,7 +442,7 @@ h1 span {
     margin: 0 auto;
     width: 97%;
     padding-top: 16px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 #project_intro:before {
@@ -451,7 +451,7 @@ h1 span {
     margin: 0 auto;
     width: 97%;
     padding-bottom: 16px;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
 
 
