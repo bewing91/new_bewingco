@@ -7,14 +7,17 @@ scope: User Research, Wireframing, User Experience Design, Visual Design
 tools:
 thumbnail: newlander_projthumb.jpg
 background: >
-  Craft is a platform that provides easy-to-access, comprehensive about companies.
-  With information drawn from thousands of sources, it provides the “Source of Truth” for company data ranging from financial to operating to human capital information.
+  Craft is a platform that provides easy-to-access, comprehensive information about companies.
+  It aims to serve as the “Source of Truth” for company data ranging from financial to operating to human capital information.
 challenge: >
-  Craft wanted to better understand the workflows of one of their key demographics, B2B salespeople, in order to build more engaging features.
+  Craft wanted to develop their first iOS app to enable one of their key demographics, B2B salespeople, to better conduct research on the go.
+  After interviewing 10 salespeople, we learned that this wouldn’t fit into users’ workflows and thus wouldn’t deliver much value to them or the company.
+  Based on our research, we identified improvements to the Craft Feed, a way to track updates about companies, to be the best way to deliver value to their users, both on-the-go and in their desktop-based work environment.
 
 metrics: Improved Y by X%.
 hero_scrn: /craft/macbook_iphone_mock_craft.png
 color: '#46305D'
+bgcolor: '#5E526A'
 ---
 
 <div class="process">
@@ -22,7 +25,127 @@ color: '#46305D'
     <div class="projsection">
       <h6>Selected Screens</h6>
       <h3>A Streamlined way to follow companies</h3>
-      <img src="{{ site.baseurl }}/img/craft/Craft_Feed_Desktop.png" style="max-width: 80%;">
+      <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_noheader.png" style="max-width: 79%;">
+      <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_mobile.png" style="max-width: 20%; vertical-align:top;">
+    </div>
+    <div class="projsection">
+      <h6>Research</h6>
+      <h3>Understanding B2B salespeople's needs</h3>
+      In order to understand the needs of the users, we conducted a series of 10 user interviews with B2B salespeople.
+      Given that we were initially tasked with designing an iOS app, we were particularly interested in learning about their workflows and behaviors, and where (mobile vs desktop) they completed different activities.
+      <br /><br />
+      Based on these conversations, we came away with some <strong>key insights:</strong>
+      <br /><br />
+      <ul>
+      <li>Salespeople prefer to conduct research on their desktops</li>
+      <li>Time-sensitive triggers are important</li>
+      <li>Salespeople monitor a list of companies</li>
+      <li>Notification needs and preferences vary</li>
+      </ul>
+      <br />
+      After considering these insights and the Craft's goals and needs, we decided that improvements to Craft's new feed functionality would best create value for users and the business.
+    </div>
+
+    <div class="projsection">
+      <h6>Identifying the problem</h6>
+      <h3>Users struggle to follow companies and identify information about companies they do follow.</h3>
+      <div class="row">
+        <div class="col-md-6">
+          To identify problems in the Craft feed, we conducted 5 usability tests.
+          After uncovering a slew of issues in the current feed experience, we prioritized them using a 2x2 and plotted each problem based on ease of implementation and impact on the user.
+          <br /><br />We came away with <strong>3 key problems to address</strong>:
+          <br /><br />
+          <ol>
+            <li>Finding companies to follow is confusing.</li>
+            <li>Following companies is confusing.</li>
+            <li>Identifying information in the feed is difficult.</li>
+          </ol>
+        </div>
+        <div class="col-md-6">
+          <img src="{{ site.baseurl }}/img/craft/craft_2x2.jpg" style="max-width: 100%;">
+        </div>
+      </div>
+    </div>
+
+    <div class="projsection">
+      <h6>1. Finding companies to follow is confusing</h6>
+      <h3>How might we make it easy to find companies to follow?</h3>
+      <div class="row projsubsection">
+        <div class="col-md-8">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_home_searchopen.png" style="max-width: 100%;">
+        </div>
+        <div class="col-md-4">
+          <h5>Before</h5>
+          The original feed page had two search bars: one in the top navigation bar and one on the right side of the feed content.
+          <br /><br />The side search made it easy to follow companies from the page, but <strong>only 1/5 users</strong> we tested thought to search for a company with the side search rather than the top search.
+          <br /><br />This resulted in users being taken away from the feed and having to spend time locating the follow button on a company's profile.
+        </div>
+      </div>
+      <div class="row projsubsection">
+        <div class="col-md-4">
+          <h5>Exploring solutions</h5>
+          Badabop beem boodie bumbum drop.
+        </div>
+        <div class="col-md-8">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+        </div>
+      </div>
+      <div class="row projsubsection">
+        <div class="col-md-8">
+          <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_noheader.png" style="max-width: 100%;">
+        </div>
+        <div class="col-md-4">
+          <h5>After</h5>
+          I removed the side search to reduce confusion and in order to allow users to quickly and easily follow companies, added 'Follow' links to companies returned in the top nav search results.
+          <br /><br />The rest of the side search card was given a clear header 'Suggested Companies' that shared the styling of the other side card headers.
+        </div>
+      </div>
+    </div>
+
+    <div class="projsection">
+      <h6>2. Following companies is confusing.</h6>
+      <h3>How might we make it easy to follow a company?</h3>
+      <div class="row projsubsection">
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+        </div>
+        <div class="col-md-3">
+          <h5>Beep boop</h5>
+          Badabop beem boodie bumbum drop.
+        </div>
+      </div>
+      <div class="row projsubsection">
+        <div class="col-md-3">
+          <h5>Beep boop</h5>
+          Badabop beem boodie bumbum drop.
+        </div>
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+        </div>
+      </div>
+    </div>
+
+    <div class="projsection">
+      <h6>3. Identifying information in the feed is difficult.</h6>
+      <h3>How might we make it easy to ?</h3>
+      <div class="row projsubsection">
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+        </div>
+        <div class="col-md-3">
+          <h5>Beep boop</h5>
+          Badabop beem boodie bumbum drop.
+        </div>
+      </div>
+      <div class="row projsubsection">
+        <div class="col-md-3">
+          <h5>Beep boop</h5>
+          Badabop beem boodie bumbum drop.
+        </div>
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+        </div>
+      </div>
     </div>
 
 

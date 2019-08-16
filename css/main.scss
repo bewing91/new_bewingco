@@ -417,22 +417,26 @@ h1 span {
 /* Project page */
 
 .proj_thumb {
-  margin-top: 144px;
-  height: 480px;
+  margin-top: 72px;
+  height: 624px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  /* margin-top: 144px;
+  height: 480px; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #projcontent {
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 .projsection {
   margin-bottom: 64px;
 
   .projsubsection {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
   }
 
   h3 {
@@ -646,7 +650,7 @@ h1 span {
 
 .headshot {
   border-radius: 50%;
-  width: 75%;
+  width: 80%;
 }
 
 #music {
