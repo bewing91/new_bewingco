@@ -14,7 +14,7 @@ challenge: >
   After interviewing 10 salespeople, we learned that this wouldn’t fit into users’ workflows and thus wouldn’t deliver much value to them or the company.
   Based on our research, we identified improvements to the Craft Feed, a way to track updates about companies, to be the best way to deliver value to their users, both on-the-go and in their desktop-based work environment.
 
-metrics: Improved Y by X%.
+metrics: Craft's engineering team is implementing these changes in early Q4 2019.
 hero_scrn: /craft/macbook_iphone_mock_craft.png
 color: '#46305D'
 bgcolor: '#5E526A'
@@ -38,9 +38,8 @@ bgcolor: '#5E526A'
       <br /><br />
       <ul>
       <li>Salespeople prefer to conduct research on their desktops</li>
-      <li>Time-sensitive triggers are important</li>
-      <li>Salespeople monitor a list of companies</li>
-      <li>Notification needs and preferences vary</li>
+      <li>Salespeople monitor a list of companies and respond to updates about these companies</li>
+      <li>Notification needs and preferences vary. Salespeople rarely need to respond immediately.</li>
       </ul>
       <br />
       After considering these insights and the Craft's goals and needs, we decided that improvements to Craft's new feed functionality would best create value for users and the business.
@@ -51,7 +50,7 @@ bgcolor: '#5E526A'
       <h3>Users struggle to follow companies and identify information about companies they do follow.</h3>
       <div class="row">
         <div class="col-md-6">
-          To identify problems in the Craft feed, we conducted 5 usability tests.
+          To identify problems in the Craft feed, we conducted usability tests with 5 people.
           After uncovering a slew of issues in the current feed experience, we prioritized them using a 2x2 and plotted each problem based on ease of implementation and impact on the user.
           <br /><br />We came away with <strong>3 key problems to address</strong>:
           <br /><br />
@@ -68,7 +67,7 @@ bgcolor: '#5E526A'
     </div>
 
     <div class="projsection">
-      <h6>1. Finding companies to follow is confusing</h6>
+      <h6>1. Finding companies to follow is confusing.</h6>
       <h3>How might we make it easy to find companies to follow?</h3>
       <div class="row projsubsection">
         <div class="col-md-8">
@@ -88,12 +87,12 @@ bgcolor: '#5E526A'
           <br /><br />Among the ideas we considered were merging the two searches into one, and adding clearer headers to improve clarity.
         </div>
         <div class="col-md-8">
-          <img src="{{ site.baseurl }}/img/craft/craft_sketches.jpg" style="max-width: 100%; border: 3px {{ page.bgcolor }} solid">
+          <img src="{{ site.baseurl }}/img/craft/craft_sketches.jpg" style="max-width: 100%; border: 4px {{ page.bgcolor }} solid;">
         </div>
       </div>
       <div class="row projsubsection">
         <div class="col-md-8">
-          <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_noheader.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_after_search.png" style="max-width: 100%;">
         </div>
         <div class="col-md-4">
           <h5>After</h5>
@@ -108,43 +107,73 @@ bgcolor: '#5E526A'
       <h3>How might we make it easy to follow a company?</h3>
       <div class="row projsubsection">
         <div class="col-md-9">
-          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_modal.png" style="max-width: 100%;">
         </div>
         <div class="col-md-3">
-          <h5>Beep boop</h5>
-          Badabop beem boodie bumbum drop.
+          <h5>Before</h5>
+          The modal to follow companies was hard for users to understand.
+          They struggled to understand how to add companies to following lists and  weren't sure when a company was successfully followed.
+          When they wanted to create a new list, they were taken to a separate screen, leading to more confusion and dropoff.
         </div>
       </div>
       <div class="row projsubsection">
         <div class="col-md-3">
-          <h5>Beep boop</h5>
-          Badabop beem boodie bumbum drop.
+          <h5>Exploring Solutions</h5>
+          We wireframed a few different modal configurations including different options for creating a new list without leaving the modal.
         </div>
         <div class="col-md-9">
-          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_modal_wireframes.jpg" style="max-width: 100%;">
+        </div>
+      </div>
+      <div class="row projsubsection">
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/craft/craft_after_modal.png" style="max-width: 100%;">
+        </div>
+        <div class="col-md-3">
+          <h5>After</h5>
+          We streamlined the modal by reducing the number of call-to-actions and settings on it.
+           The header copy was changed to be more conversational in order make it easier to understand, as well as to account for both adding (following) and removing (unfollowing) modal states.
+          <br /><br />
+          After the changes, <strong>5/5 users</strong> tested understood how to follow a company, and knew when they had successfully done so.
         </div>
       </div>
     </div>
 
     <div class="projsection">
       <h6>3. Identifying information in the feed is difficult.</h6>
-      <h3>How might we make it easy to ?</h3>
+      <h3>How might we make it easy to understand information in the feed?</h3>
       <div class="row projsubsection">
         <div class="col-md-9">
-          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_header_before.jpg" style="max-width: 100%;">
         </div>
         <div class="col-md-3">
-          <h5>Beep boop</h5>
-          Badabop beem boodie bumbum drop.
+          <h5>Before</h5>
+          The original cards had high cognitive load.
+           With the key information like the company name and type of update split into multiple headers and subheaders,
+           and the date repeated on the news card, it was hard for users to process what was in each update.
         </div>
       </div>
       <div class="row projsubsection">
         <div class="col-md-3">
-          <h5>Beep boop</h5>
-          Badabop beem boodie bumbum drop.
+          <h5>Exploring Solutions</h5>
+          After sketching out a variety of options, we settled on two different options to test further:
+          a conversational style header and a header that relied on badges. <br /><br />We tested them with 40 people
+           on UsabilityHub to gauge which was easier to understand. Based on our testing, it became clear that the conversational header
+           required less interpretation and processing while the button-like nature of the badges
+           led to some confusion.
         </div>
         <div class="col-md-9">
-          <img src="{{ site.baseurl }}/img/craft/craft_before_home.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_header_exploring.jpg" style="max-width: 100%;">
+        </div>
+      </div>
+      <div class="row projsubsection">
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/craft/craft_header_after.jpg" style="max-width: 100%;">
+        </div>
+        <div class="col-md-3">
+          <h5>After</h5>
+          The previous headers were consolidated into one conversational style header that users could read at a quick glance.
+          The date format was changed to a more casual format as well to make it more accessible.
         </div>
       </div>
     </div>
