@@ -7,12 +7,11 @@ scope: User Research, Wireframing, User Experience Design, Visual Design
 tools:
 thumbnail: newlander_projthumb.jpg
 background: >
-  Craft is a platform that provides easy-to-access, comprehensive information about companies.
-  It aims to serve as the “Source of Truth” for company data ranging from financial to operating to human capital information.
+  Craft is a platform that provides easy-to-access, comprehensive information about companies, from financial to operating to human capital data.
 challenge: >
-  Craft wanted to develop their first iOS app to enable one of their key demographics, B2B salespeople, to better conduct research on the go.
-  After interviewing 10 salespeople, we learned that this wouldn’t fit into users’ workflows and thus wouldn’t deliver much value to them or the company.
-  Based on our research, we identified improvements to the Craft Feed, a way to track updates about companies, to be the best way to deliver value to their users, both on-the-go and in their desktop-based work environment.
+  Craft wanted to develop an iOS app to enable one of their key demographics, B2B salespeople, to better conduct research on the go.
+  After conducting user research, we learned that there wasn't a need for this product, and instead identified improvements to the Craft Feed,
+  a way to track updates about companies, to be the best way to deliver value to their users.
 
 metrics: Craft's engineering team is implementing these changes in early Q4 2019.
 hero_scrn: /craft/macbook_iphone_mock_craft.png
@@ -22,98 +21,117 @@ bgcolor: '#5E526A'
 
 <div class="process">
   <div id="solution">
-    <div class="projsection">
-      <h6>Selected Screens</h6>
+    <div class="projsection container" style="padding-bottom: 80px;">
+      <h5 style="color: {{ page.bgcolor }};">SELECTED SCREENS</h5>
       <h3>A Streamlined way to follow companies</h3>
       <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_noheader.png" style="max-width: 79%;">
       <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_mobile.png" style="max-width: 20%; vertical-align:top;">
     </div>
-    <div class="projsection">
-      <h6>Research</h6>
-      <h3>Understanding B2B salespeople's needs</h3>
-      In order to understand the needs of the users, we conducted a series of 10 user interviews with B2B salespeople.
-      Given that we were initially tasked with designing an iOS app, we were particularly interested in learning about their workflows and behaviors, and where (mobile vs desktop) they completed different activities.
-      <br /><br />
-      Based on these conversations, we came away with some <strong>key insights:</strong>
-      <br /><br />
-      <ul>
-      <li>Salespeople prefer to conduct research on their desktops</li>
-      <li>Salespeople monitor a list of companies and respond to updates about these companies</li>
-      <li>Notification needs and preferences vary. Salespeople rarely need to respond immediately.</li>
-      </ul>
-      <br />
-      After considering these insights and the Craft's goals and needs, we decided that improvements to Craft's new feed functionality would best create value for users and the business.
-    </div>
-
-    <div class="projsection">
-      <h6>Identifying the problem</h6>
-      <h3>Users struggle to follow companies and identify information about companies they do follow.</h3>
-      <div class="row">
-        <div class="col-md-6">
+    <div class="projsection" style="background: #f7f6f9; padding-bottom: 80px;">
+      <div class="container">
+        <div class="projsubsection">
+          <h5 style="color: {{ page.bgcolor }};">RESEARCH</h5>
+          <h3>Understanding B2B salespeople's needs</h3>
+          In order to understand the needs of the users, we conducted a series of 10 user interviews with B2B salespeople.
+          Given that we were initially tasked with designing an iOS app, we were particularly interested in learning about their workflows and behaviors, and where (mobile vs desktop) they completed different activities.
+          <br /><br />
+          Based on these conversations, we came away with some <strong>key insights:</strong>
+          <br /><br />
+          <ul>
+          <li>Salespeople prefer to conduct research on their desktops</li>
+          <li>Salespeople monitor a list of companies and respond to updates about these companies</li>
+          <li>Notification needs and preferences vary. Salespeople rarely need to respond immediately.</li>
+          </ul>
+          <br />
+          After considering these insights and the Craft's goals and needs, we decided that <strong>improvements to Craft's new feed functionality would best create value for users and the business.</strong>
+        </div>
+        <div>
+          <h3>Identifying usability problems</h3>
+          <!-- <h3>Users struggle to follow companies and identify information about companies they do follow.</h3> -->
           To identify problems in the Craft feed, we conducted usability tests with 5 people.
           After uncovering a slew of issues in the current feed experience, we prioritized them using a 2x2 and plotted each problem based on ease of implementation and impact on the user.
           <br /><br />We came away with <strong>3 key problems to address</strong>:
           <br /><br />
+          Users struggle to stay up-to-date on companies they care about.
           <ol>
             <li>Finding companies to follow is confusing.</li>
             <li>Following companies is confusing.</li>
             <li>Identifying information in the feed is difficult.</li>
           </ol>
         </div>
-        <div class="col-md-6">
-          <img src="{{ site.baseurl }}/img/craft/craft_2x2.jpg" style="max-width: 100%;">
-        </div>
       </div>
     </div>
 
-    <div class="projsection">
-      <h6>1. Finding companies to follow is confusing.</h6>
-      <h3>How might we make it easy to find companies to follow?</h3>
+
+
+    <div class="projsection container">
+      <h5 style="color: #de3f70;">Pain Point 1: Finding companies to follow is confusing.</h5>
+      <h3>Solution: How might we make it easy to find companies to follow?</h3>
       <div class="row projsubsection">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <img src="{{ site.baseurl }}/img/craft/craft_before_home_searchopen.png" style="max-width: 100%;">
         </div>
-        <div class="col-md-4">
-          <h5>Before</h5>
-          The original feed page had two search bars: one in the top navigation bar and one on the right side of the feed content.
-          <br /><br />The side search made it easy to follow companies from the page, but <strong>only 1/5 users</strong> we tested thought to search for a company with the side search rather than the top search.
-          <br /><br />This resulted in users being taken away from the feed and having to spend time locating the follow button on a company's profile.
+        <div class="col-md-3">
+          <h5 style="padding-bottom: 8px;">Before: Two Searches, Two Purposes</h5>
+          <ul style="padding-left: 32px;">
+            <li style="padding-bottom: 8px;">Page had two search bars with different behaviors and functionalities.</li>
+                        <li style="padding-bottom: 8px;">Users who used top search were taken away from feed and struggled to find following button.</li>
+            <li style="padding-bottom: 8px;"><strong>Only 1/5 users tested thought to use the correct search (side search).</strong></li>
+          </ul>
+          <!--
+          The page had two search bars with different behaviors and functionalities. As a result, users weren't sure how to find companies to follow and <strong>only 1/5 users tested thought to use the correct search.</strong>
+           <br /><br />The other 4 users were taken away from the feed and spent time trying locating the follow button on a company's profile. -->
         </div>
       </div>
       <div class="row projsubsection">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h5>Exploring solutions</h5>
-          With Craft's existing design system and patterns in mind, we explored different solutions to make finding companies to follow easier.
+          With Craft's existing design system in mind, we explored solutions to make finding companies to follow easier.
           <br /><br />Among the ideas we considered were merging the two searches into one, and adding clearer headers to improve clarity.
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
           <img src="{{ site.baseurl }}/img/craft/craft_sketches.jpg" style="max-width: 100%; border: 4px {{ page.bgcolor }} solid;">
         </div>
       </div>
-      <div class="row projsubsection">
-        <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-9">
           <img src="{{ site.baseurl }}/img/craft/craft_after_search.png" style="max-width: 100%;">
         </div>
-        <div class="col-md-4">
-          <h5>After</h5>
-          I removed the side search to reduce confusion and in order to allow users to quickly and easily follow companies, added 'Follow' links to companies returned in the top nav search results.
-          <br /><br />The rest of the side search card was given a clear header 'Suggested Companies' that shared the styling of the other side card headers.
+        <div class="col-md-3">
+          <h5 style="padding-bottom: 8px;">After: One Fully Functional Search</h5>
+          <div style="padding-bottom: 8px;">To reduce confusion, the searches were combined into one:</div>
+          <ul style="padding-left: 32px;">
+            <li style="padding-bottom: 8px;">'Follow' links were added in top search.</li>
+            <li style="padding-bottom: 8px;">Side search bar was removed and the suggested companies list was given a clear header.</li>
+            <li style="padding-bottom: 8px;"><strong>5/5 users successfully found and followed companies</strong> that they were looking for.</li>
+          </ul>
+          <!-- To reduce confusion and enable users to easily follow companies, the searches were combined into one.
+          The side search bar was removed, 'Follow' links were added to companies in the top search,
+          and the suggested companies list was given a clear header.
+          <br /><br />
+          As a result <strong>5/5 users successfully found and followed companies</strong> that they were looking for. -->
         </div>
       </div>
     </div>
 
-    <div class="projsection">
-      <h6>2. Following companies is confusing.</h6>
+    <div class="projsection container">
+      <h5 style="color: #de3f70;">Pain Point 2: Following companies is confusing.</h5>
       <h3>How might we make it easy to follow a company?</h3>
       <div class="row projsubsection">
         <div class="col-md-9">
-          <img src="{{ site.baseurl }}/img/craft/craft_before_modal.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_before_modal_zoom.png" style="max-width: 100%;">
         </div>
         <div class="col-md-3">
-          <h5>Before</h5>
+          <h5 style="padding-bottom: 8px;">Before: A modal with too many settings and CTAs</h5>
+          <ul style="padding-left: 32px;">
+            <li style="padding-bottom: 8px;">Modal was hard for users to understand.</li>
+            <li style="padding-bottom: 8px;">Creating a new list took users to a new screen, leading to increased confusion and dropoff.</li>
+            <li style="padding-bottom: 8px;"><strong>0/5 users understood how to add companies to following lists</strong> and knew when a company was successfully followed.</li>
+          </ul>
+          <!--
           The modal to follow companies was hard for users to understand.
-          They struggled to understand how to add companies to following lists and  weren't sure when a company was successfully followed.
-          When they wanted to create a new list, they were taken to a separate screen, leading to more confusion and dropoff.
+          <strong>0/5 users understood how to add companies</strong> to following lists and knew when a company was successfully followed.
+          <br /><br />When they wanted to create a new list, they were taken to a separate screen, leading to more confusion and dropoff. -->
         </div>
       </div>
       <div class="row projsubsection">
@@ -125,70 +143,96 @@ bgcolor: '#5E526A'
           <img src="{{ site.baseurl }}/img/craft/craft_modal_wireframes.jpg" style="max-width: 100%;">
         </div>
       </div>
-      <div class="row projsubsection">
+      <div class="row">
         <div class="col-md-9">
-          <img src="{{ site.baseurl }}/img/craft/craft_after_modal.png" style="max-width: 100%;">
+          <img src="{{ site.baseurl }}/img/craft/craft_after_modal_zoom.png" style="max-width: 100%;">
         </div>
         <div class="col-md-3">
-          <h5>After</h5>
-          We streamlined the modal by reducing the number of call-to-actions and settings on it.
-           The header copy was changed to be more conversational in order make it easier to understand, as well as to account for both adding (following) and removing (unfollowing) modal states.
+          <h5 style="padding-bottom: 8px;">After: A Conversational Checklist</h5>
+          <ul style="padding-left: 32px;">
+            <li style="padding-bottom: 8px;">Reduced number of CTAs and settings.</li>
+            <li style="padding-bottom: 8px;">List creation moved to with-in modal.</li>
+            <li style="padding-bottom: 8px;">Header written conversationally for easier processing and to account for both following and unfollowing states.</li>
+            <li style="padding-bottom: 8px;"><strong>5/5 users understood how to follow a company, and knew when they had done so.</strong></li>
+          </ul>
+          <!-- We streamlined the modal by reducing the number of call-to-actions and settings on it.
+           The header copy was written more conversationally in order make it easier to understand and to account for both adding (following) and removing (unfollowing) states.
           <br /><br />
-          After the changes, <strong>5/5 users</strong> tested understood how to follow a company, and knew when they had successfully done so.
+          After the changes, <strong>5/5 users</strong> tested understood how to follow a company, and knew when they had successfully done so. -->
         </div>
       </div>
     </div>
 
-    <div class="projsection">
-      <h6>3. Identifying information in the feed is difficult.</h6>
+    <div class="projsection container" style="padding-bottom: 80px;">
+      <h5 style="color: #de3f70;">Pain Point 3: Identifying information in the feed is difficult.</h5>
       <h3>How might we make it easy to understand information in the feed?</h3>
       <div class="row projsubsection">
         <div class="col-md-9">
           <img src="{{ site.baseurl }}/img/craft/craft_header_before.jpg" style="max-width: 100%;">
         </div>
         <div class="col-md-3">
-          <h5>Before</h5>
+          <h5 style="padding-bottom: 8px;">Before: Multiple Headings, High Cognitive Load</h5>
+          <ul style="padding-left: 32px;">
+            <li style="padding-bottom: 8px;">Key information like the company name and type of update split into multiple headers and subheaders</li>
+            <li style="padding-bottom: 8px;">Date repeated on news card</li>
+            <li style="padding-bottom: 8px;">Confusing information hierachy made it hard for users to quickly understand each update.</li>
+          </ul>
+          <!--
           The original cards had high cognitive load.
            With the key information like the company name and type of update split into multiple headers and subheaders,
-           and the date repeated on the news card, it was hard for users to process what was in each update.
+           and the date repeated on the news card, it was hard for users to process what was in each update. -->
         </div>
       </div>
       <div class="row projsubsection">
         <div class="col-md-3">
           <h5>Exploring Solutions</h5>
-          After sketching out a variety of options, we settled on two different options to test further:
-          a conversational style header and a header that relied on badges. <br /><br />We tested them with 40 people
-           on UsabilityHub to gauge which was easier to understand. Based on our testing, it became clear that the conversational header
-           required less interpretation and processing while the button-like nature of the badges
+          After sketching some options, we <strong>tested two designs further with 40 people on UsabilityHub.</strong>
+          <br /><br />
+          It became clear that <strong>the conversational style header was easiest to understand</strong>. It
+           required less interpretation and processing while the button-like nature of the badge design
            led to some confusion.
         </div>
         <div class="col-md-9">
           <img src="{{ site.baseurl }}/img/craft/craft_header_exploring.jpg" style="max-width: 100%;">
         </div>
       </div>
-      <div class="row projsubsection">
+      <div class="row">
         <div class="col-md-9">
           <img src="{{ site.baseurl }}/img/craft/craft_header_after.jpg" style="max-width: 100%;">
         </div>
         <div class="col-md-3">
-          <h5>After</h5>
+          <h5 style="padding-bottom: 8px;">After: A Distinct, Conversational Header</h5>
+          <ul style="padding-left: 32px;">
+            <li style="padding-bottom: 8px;">Headers were consolidated into one conversational style header for easy understanding.</li>
+            <li style="padding-bottom: 8px;">Date changed to more familiar format.</li>
+            <li style="padding-bottom: 8px;">Users could quickly identify key information for each update.</li>
+          </ul>
+          <!--
           The previous headers were consolidated into one conversational style header that users could read at a quick glance.
-          The date format was changed to a more casual format as well to make it more accessible.
+          The date format was changed to a more casual format as well to make it more accessible. -->
         </div>
       </div>
     </div>
 
-    <div class="projsection">
-      <h6>Outcome</h6>
-      <h3>Headed to production</h3>
-      <img src="{{ site.baseurl }}/img/craft/craft_after_modal_2.gif" style="max-width: 100%;">
-      <br /><br />
-      Craft's team was so excited about the changes that we made, that they moved them to the top of the roadmap
-      and plan to implement them in early Q4 2019. Thanks to our use of Craft's existing design system, the changes
-      are relatively easy to implement and thus have a potentially high ROI for the Craft platform.
-      <!--
-      <h3>What's Next</h3>
-      <div>In the course of our research, we identifed a lot of usability issues with the current feed.</div> -->
+    <div class="projsection" style="background: #f7f6f9; padding-bottom: 80px;">
+      <div class="container">
+        <div class="projsubsection">
+          <h5 style="color: {{ page.bgcolor }};">OUTCOME</h5>
+          <h3>To production, and beyond!</h3>
+          <img src="{{ site.baseurl }}/img/craft/craft_after_modal_3.gif" style="max-width: 100%;">
+          <br /><br />
+          Craft's team was so excited about the changes that we made, that they moved them to the top of the roadmap
+          and plan to implement them in early Q4 2019. Thanks to our use of Craft's existing design system, the changes
+          are relatively easy to implement and thus have a potentially high ROI for the Craft platform.
+        </div>
+        <h3>What's Next</h3>
+        <div>In the course of our research, we identifed a number of usability issues with the current feed.
+          While we were constrained by time and engineering considerations, there were a number of additional changes that I would make in order to deliver more value to users and the business.
+
+          My top priority would be to add filtering functionality to the feed to make it even easier for users to find what they're looking for in the feed.
+        <br /><br />
+        </div>
+      </div>
     </div>
 
 
