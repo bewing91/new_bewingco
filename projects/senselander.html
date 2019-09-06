@@ -14,65 +14,73 @@ challenge: >
 metrics: Improved bounce rate by 18%.
 hero_scrn: /sense/senselander_macbook-iphonex.png
 color: '#F9461C'
+bgcolor: '#ffcfc5'
 ---
 
 <div class="process">
-  <h3>Process</h3>
   <div id="solution">
+
     <div id="research" class="projsection">
-      <h5>Research</h5>
-      <p>I started by conducting some qualitative and quantitative research.
-        I reviewed our database of customer testimonials and communications with customers within the company's online forums.
-        I wanted to understand how customers themselves talked about the product and where they found value in it.
-        I also reviewed comments to our Facebook ads to identify points of confusion with our current ad copy, landing page, and overall product.</p>
-        <p>With an understanding of how customers and prospective customers thought about the product, I used Google Analytics and a scroll depth tracker called CrazyEgg to see how prospective customers were interacting with the current landing page and website.</p>
-    </div>
-    <div class="projsection">
-      <h5>Analysis</h5>
-      <p>After conducting research, I came away with a few key insights:
-        <ul>
-          <li>To most people, the biggest benefit of Sense is the money that they save on electrical bills through energy efficiency improvements.</li>
-          <li>People are skeptical as to whether the product will work. The background and expertise of Sense’s team and social proof are helpful in giving the product credibility.</li>
-          <li>Prospective customers want to do more research on the product before purchasing. They want to learn more before they’re ready to purchase.</li>
-          <li>Prospective customers are interested in how the product works. They tend to be detail oriented and tech enthusiasts.</li>
-        </ul>
-    </div>
-    <div class="projsection">
-      <h5>Ideation & Design</h5>
+      <div class="projsubsection container">
+        <h5 style="color: {{  }};">RESEARCH</h5>
+        <h3>Understanding User Behavior</h3>
+          <p>I started by conducting some qualitative and quantitative research.
+            I reviewed our database of customer testimonials and communications with customers within the company's online forums.
+            I wanted to understand how customers themselves talked about the product and where they found value in it.
+            I also reviewed comments to our Facebook ads to identify points of confusion with our current ad copy, landing page, and overall product.</p>
+            <p>With an understanding of how customers and prospective customers thought about the product, I used Google Analytics and a scroll depth tracker called CrazyEgg to see how prospective customers were interacting with the current landing page and website.</p>
+      </div>
 
-      <p>
-        Messaging-wise, the old prospecting landing page described <i>what</i> Sense was, but didn't really address <i>why</i> a prospective customer should care about it. In creating this landing page, I really wanted to speak to the value propositions that Sense provides so that the prospective customer can viscerally understand how purchasing Sense will help them. After the value propositions, some information on how Sense works is displayed. This information is more descriptive than the previous page, and aims to show rather than tell, with app screenshots and an image of the monitor installed in an electrical panel.</p>
-      </p>
+      <div class="container">
+        <h3>Key Insights</h3>
+        <p>After conducting research, I came away with a few key insights:
+          <ul>
+            <li>To most people, the biggest benefit of Sense is the money that they save on electrical bills through energy efficiency improvements.</li>
+            <li>People are skeptical as to whether the product will work. The background and expertise of Sense’s team and social proof are helpful in giving the product credibility.</li>
+            <li>Prospective customers want to do more research on the product before purchasing. They want to learn more before they’re ready to purchase.</li>
+            <li>Prospective customers are interested in how the product works. They tend to be detail oriented and tech enthusiasts.</li>
+          </ul>
+      </div>
+    </div>
 
-      <p>As I moved from the wireframe to the hi-fidelty design, I made use of Sense's existing brand guidelines and design patterns in order to ensure that the landing page fit seamlessly with the brand and within the customer journey.</p>
-      <div id="final_designs" class="row">
+    <div class="projsection">
+      <div class="container">
+        <h5>Ideation & Design</h5>
+        <p>
+          Messaging-wise, the old prospecting landing page described <i>what</i> Sense was, but didn't really address <i>why</i> a prospective customer should care about it. In creating this landing page, I really wanted to speak to the value propositions that Sense provides so that the prospective customer can viscerally understand how purchasing Sense will help them. After the value propositions, some information on how Sense works is displayed. This information is more descriptive than the previous page, and aims to show rather than tell, with app screenshots and an image of the monitor installed in an electrical panel.</p>
+        </p>
+        <p>As I moved from the wireframe to the hi-fidelty design, I made use of Sense's existing brand guidelines and design patterns in order to ensure that the landing page fit seamlessly with the brand and within the customer journey.</p>
+        <div id="final_designs" class="row">
+          <div class="col-md-6">
+            <h6>Wireframe</h6>
+            <img src="{{ '/img/Sense_Lander_Wireframe.png' | relative_url }}" style="width:98%;">
+          </div>
+          <div class="col-md-6">
+            <h6>Hi-Fidelity</h6>
+            <img src="{{ '/img/newlander.png' | relative_url }}" style="width:98%;">
+          </div>
+        </div>
+
+        <h5>Implementation and Testing</h5>
+        <p>Once the design was finalized, I implemented the designs and built the landing page using HTML and CSS, making use of Bootstrap and Jekyll.
+          I made sure to add the Google Analytics tracking snippet and Facebook’s pixel in order to be able to track the success of the page.</p>
+          <p>Finally, we A/B tested the new landing page against the old by splitting the traffic from our highest performing Facebook ad between the two pages.
+            Over the course of two weeks, after over 1,000 visitors viewed each page, we determined that the new landing page reduced the bounce rate by 18%.</p>
+      </div>
+    </div>
+
+  <div id="final_designs">
+    <div class="container">
+      <h3>Results</h3>
+      <div class="row">
         <div class="col-md-6">
-          <h6>Wireframe</h6>
-          <img src="{{ '/img/Sense_Lander_Wireframe.png' | relative_url }}" style="width:98%;">
+          <h6>Before</h6>
+          <img src="{{ '/img/oldlander.png' | relative_url }}" style="width:98%;">
         </div>
         <div class="col-md-6">
-          <h6>Hi-Fidelity</h6>
+          <h6>After</h6>
           <img src="{{ '/img/newlander.png' | relative_url }}" style="width:98%;">
         </div>
-      </div>
-    </div>
-    <h5>Implementation and Testing</h5>
-      <p>Once the design was finalized, I implemented the designs and built the landing page using HTML and CSS, making use of Bootstrap and Jekyll.
-        I made sure to add the Google Analytics tracking snippet and Facebook’s pixel in order to be able to track the success of the page.</p>
-      <p>Finally, we A/B tested the new landing page against the old by splitting the traffic from our highest performing Facebook ad between the two pages.
-        Over the course of two weeks, after over 1,000 visitors viewed each page, we determined that the new landing page reduced the bounce rate by 18%.</p>
-  </div>
-
-<h3>Results</h3>
-  <div id="final_designs">
-    <div class="row">
-      <div class="col-md-6">
-        <h6>Before</h6>
-        <img src="{{ '/img/oldlander.png' | relative_url }}" style="width:98%;">
-      </div>
-      <div class="col-md-6">
-        <h6>After</h6>
-        <img src="{{ '/img/newlander.png' | relative_url }}" style="width:98%;">
       </div>
     </div>
   </div>

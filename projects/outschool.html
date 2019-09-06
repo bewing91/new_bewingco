@@ -10,8 +10,8 @@ thumbnail: newlander_projthumb.jpg
 background: Outschool is an online learning and teaching marketplace that connects K-12 learners with teachers around the world.
 challenge: >
   In order to grow their plaform, Outschool needed to increase the number of teachers.
-  The current teacher application process lacked transparency and failed to engage applicants while they waited for things like background check to be processed.
-  As a result, it had a 70% dropoff for teachers during the application process. We were tasked with improving engagement and reducing dropoff.
+  The current teacher application process lacked transparency and failed to engage applicants while they waited for things like background check to be processed, resulting in a 70% dropoff rate.
+  We were tasked with improving engagement and reducing dropoff.
 
 hero_scrn: /outschool/macbook_iphone_mock_outschool.png
 bgcolor: '#9AA5B1'
@@ -20,61 +20,80 @@ color: '#105cb3'
 
 <div class="process">
   <div id="solution">
-    <div class="projectsection">
-      <h3></h3>
+
+    <div class="projsection container" style="padding-bottom: 80px;">
+      <h5 style="color: {{ page.bgcolor }};">SELECTED SCREENS</h5>
+      <h3>An engaging and transparent application process</h3>
+      <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_noheader.png" style="max-width: 79%;">
+      <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_mobile.png" style="max-width: 20%; vertical-align:top;">
     </div>
-    <div id="research" class="projsection">
+
+
+    <div id="research" class="projsection" style="background: #f0f2f5; padding-bottom: 80px;">
       <div class="container">
+        <h5 style="color: {{ page.bgcolor }};">RESEARCH</h5>
         <h3>Understanding the current application process</h3>
+
         <div class="projsubsection">
-          <h5>Product Audit: A look at the current task flow</h5>
+          <h5>Current Flow: Too Many Steps in too many places</h5>
           <img src="{{ site.baseurl }}/img/outschool/before_flow.png" style="padding: 24px 0px; max-width: 100%;">
           <p>The current teacher application process moved prospective teachers between various screens on the Outschool website, emails, and third-party sites.
             The process felt disjointed and confusing.</p>
-          </div>
-          <div class="projsubsection">
-            <h5>Reviewing User Research</h5>
-            <p>Over the past few months, the Outschool Product team collected feedback from teachers and prospective teachers about the application process.
-              After reviewing this feedback, it was clear the prospective teachers were experiencing a few key pain points:
-            </p>
-            <div class="row">
-              <div class="col-md-4">
-                <b>Lack of transparency</b>
-                <br />Users didn't understand where they were in the process or when they would get a response.
-              </div>
-              <div class="col-md-4">
-                <b>Disparate process</b>
-                <br />Users didn't understand how or where to continue to the next step of the application process. They needed to move between the Outschool platform, emails, and external platforms
-              </div>
-              <div class="col-md-4">
-                <b>Wasted excitement</b>
-                <br />Users were excited to engage with the Outschool teaching platform but had no way to while they were waiting.
-              </div>
+        </div>
+
+        <div class="">
+          <h3>Why are prospective teachers dropping off?</h3>
+          <p>Over the past few months, the Outschool Product team collected feedback from teachers and prospective teachers about the application process.
+            After reviewing this feedback, we identified 3 key pain points prospective teachers were experiencing:
+            <br /><br />
+          </p>
+          <div class="row">
+            <div class="col-md-4" style="padding-right: 40px;">
+              <div style="padding-bottom: 8px; color: {{ page.color }}; font-weight: 500;">Pain Point 1:<br />Lack of transparency</div>
+              Users didn't know where they were in the process or when they would get a response.
+            </div>
+            <div class="col-md-4" style="padding-right: 40px;">
+              <div style="padding-bottom: 8px; color: {{ page.color }}; font-weight: 500;">Pain Point 2:<br />Disparate process</div>
+              Users didn't understand how or where to continue to the next step of the application process.
+            </div>
+            <div class="col-md-4" style="padding-right: 40px;">
+              <div style="padding-bottom: 8px; color: {{ page.color }}; font-weight: 500;">Pain Point 3:<br />Wasted excitement</div>
+              Users were excited to engage with the platform but had no way to while they were waiting.
             </div>
           </div>
-          <div class="projsubsection">
-            <h5>Job Stories</h5>
-            In order to frame our understanding of users and our design explorations going forward, we developed a few job to be done stories:
-            <ul>
-              <li>When prospective teachers are in the application process, they want to know where they are in the process so that they know when they'll be done with their application.</li>
-              <li>When prospective teachers are waiting to be approved, they want to know how long reviewing an application takes so that they know when they'll get a response.</li>
-              <li>When prospective teachers are waiting to be approved, they want to learn how to be a successful Outschool teacher so that they can hit the ground running when they're approved.</li>
-              <!--
-              <li>When prospective teachers are applying to Outschool, they want [] so that they feel that their time applying is being well spent.</li>
-            -->
-          </ul>
         </div>
+<!--
+        <div class="">
+          <h5>Job Stories</h5>
+          In order to frame our understanding of users and our design explorations going forward, we developed a few job to be done stories:
+          <br /><br />
+          <ul>
+            <li>When prospective teachers are in the application process, they want to know where they are in the process so that they know when they'll be done with their application.</li>
+            <li>When prospective teachers are waiting to be approved, they want to know how long reviewing an application takes so that they know when they'll get a response.</li>
+            <li>When prospective teachers are waiting to be approved, they want to learn how to be a successful Outschool teacher so that they can hit the ground running when they're approved.</li>
+
+
+            <li>When prospective teachers are applying to Outschool, they want [] so that they feel that their time applying is being well spent.</li>
+
+        </ul>
+      </div>
+-->
       </div>
     </div>
+
     <div class="projsection">
       <div class="container">
-        <h3>Exploring potential solutions</h3>
-        <h5>How might we encourage help teachers understand where they are in the application process and keep them engaged as the move through it?</h5>
-        <h5>Sketches</h5>
-        <img src="{{ site.baseurl }}/img/outschool/outschool_sketches_compiled.png" style="padding: 24px 0px; max-width: 100%;">
-        <h5>Wireframes</h5>
-        <img src="{{ site.baseurl }}/img/outschool/outschool_wireframe.png" style="margin: 24px 0px; max-height: 560px;">
-        <img src="{{ site.baseurl }}/img/outschool/outschool_wireframe_mobile.png" style="margin: 24px 0px; max-width: 50%; max-height: 560px;">
+        <h5 style="color: {{ page.bgcolor }};">EXPLORING SOLUTIONS</h5>
+        <h3>How might we help teachers understand where they are in the application process and keep them engaged as they move through it?</h3>
+        <div class="projsubsection">
+          <h5>Sketches</h5>
+          <img src="{{ site.baseurl }}/img/outschool/outschool_sketches_compiled.jpg" style="margin: 24px 0px; max-width: 100%; border: 6px solid {{ page.bgcolor }}">
+        </div>
+        <div class="projsubsection">
+          <h5>Wireframes</h5>
+          <img src="{{ site.baseurl }}/img/outschool/outschool_wireframe.png" style="margin: 24px 0px; max-height: 680px; paddin-right: 16px;">
+          <img src="{{ site.baseurl }}/img/outschool/outschool_wireframe_mobile.png" style="margin: 24px 0px; max-width: 50%; max-height: 680px;">
+        </div>
       </div>
     </div>
     <div class="projsection">
