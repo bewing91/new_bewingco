@@ -5,7 +5,7 @@ company: Outschool
 type: Responsive Web
 scope: User Experience Design, Visual Design, Information Architecture, Usability Testing
 tools:
-metrics: Reduced dropoff by X%.
+metrics: Outschool's engineering team is implementing these changes in early Q4 2019.
 thumbnail: newlander_projthumb.jpg
 background: Outschool is an online learning and teaching marketplace that connects K-12 learners with teachers around the world.
 challenge: >
@@ -24,19 +24,25 @@ color: '#105cb3'
     <div class="projsection container" style="padding-bottom: 80px;">
       <h5 style="color: {{ page.bgcolor }};">SELECTED SCREENS</h5>
       <h3>An engaging and transparent application process</h3>
-      <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_noheader.png" style="max-width: 79%;">
-      <img src="{{ site.baseurl }}/img/craft/craft_selected_screen_mobile.png" style="max-width: 20%; vertical-align:top;">
+      <div class="row">
+        <div class="col-md-9">
+          <img src="{{ site.baseurl }}/img/outschool/outschool_selected.png" class="imgshadow mb-4" style="max-width: 100%;">
+        </div>
+        <div class="col-md-3">
+          <img src="{{ site.baseurl }}/img/outschool/outschool_selected_mobile.png" class="imgshadow" style="max-width: 100%;">
+        </div>
+      </div>
     </div>
 
 
-    <div id="research" class="projsection" style="background: #f0f2f5; padding-bottom: 80px;">
+    <div id="research" class="projsection" style="background: #f0f2f5; padding-bottom: 56px;">
       <div class="container">
         <h5 style="color: {{ page.bgcolor }};">RESEARCH</h5>
         <h3>Understanding the current application process</h3>
 
         <div class="projsubsection">
-          <h5>Current Flow: Too Many Steps in too many places</h5>
-          <img src="{{ site.baseurl }}/img/outschool/before_flow.png" style="padding: 24px 0px; max-width: 100%;">
+          <h5>Current Flow: Too many steps in too many places</h5>
+          <img src="{{ site.baseurl }}/img/outschool/before_flow.png" style="padding: 32px 0px; max-width: 100%;">
           <p>The current teacher application process moved prospective teachers between various screens on the Outschool website, emails, and third-party sites.
             The process felt disjointed and confusing.</p>
         </div>
@@ -44,19 +50,19 @@ color: '#105cb3'
         <div class="">
           <h3>Why are prospective teachers dropping off?</h3>
           <p>Over the past few months, the Outschool Product team collected feedback from teachers and prospective teachers about the application process.
-            After reviewing this feedback, we identified 3 key pain points prospective teachers were experiencing:
+            After reviewing this feedback, we identified <strong>3 key pain points prospective teachers were experiencing</strong>:
             <br /><br />
           </p>
           <div class="row">
-            <div class="col-md-4" style="padding-right: 40px;">
+            <div class="col-md-4" style="padding-right: 40px; padding-bottom: 24px;">
               <div style="padding-bottom: 8px; color: {{ page.color }}; font-weight: 500;">Pain Point 1:<br />Lack of transparency</div>
               Users didn't know where they were in the process or when they would get a response.
             </div>
-            <div class="col-md-4" style="padding-right: 40px;">
+            <div class="col-md-4" style="padding-right: 40px; padding-bottom: 24px;">
               <div style="padding-bottom: 8px; color: {{ page.color }}; font-weight: 500;">Pain Point 2:<br />Disparate process</div>
               Users didn't understand how or where to continue to the next step of the application process.
             </div>
-            <div class="col-md-4" style="padding-right: 40px;">
+            <div class="col-md-4" style="padding-right: 40px; padding-bottom: 24px;">
               <div style="padding-bottom: 8px; color: {{ page.color }}; font-weight: 500;">Pain Point 3:<br />Wasted excitement</div>
               Users were excited to engage with the platform but had no way to while they were waiting.
             </div>
@@ -84,29 +90,191 @@ color: '#105cb3'
     <div class="projsection">
       <div class="container">
         <h5 style="color: {{ page.bgcolor }};">EXPLORING SOLUTIONS</h5>
-        <h3>How might we help teachers understand where they are in the application process and keep them engaged as they move through it?</h3>
+        <h3>How might we make it easy for teachers to understand their application status and stay engaged while they wait?</h3>
+
+        <div class="">
+          <h5>New Flow: One main dashboard to guide teachers through the application process</h5>
+          <img src="{{ site.baseurl }}/img/outschool/after_flow.png" style="padding: 32px 0px; max-width: 100%;">
+          <div>After exploring a number of options, we decided that <strong>a dashboard would be the best solution</strong> to the issues applicants were experiencing.
+          A dashboard would give the applicant:
+          <br /><br />
+
+          <ul>
+           <li><strong>Application status</strong> in a consistent place</li>
+           <li><strong>Guiding information</strong> about next steps</li>
+           <li><strong>Resources</strong> to engage with while waiting</li>
+          </ul>
+          While we explored embedding the background check to further simplify the flow, we ultimately decided an embedded form
+          would complicated the interface and potentially hurt the user experience.
+          </div>
+        </div>
+        <!--
         <div class="projsubsection">
           <h5>Sketches</h5>
-          <img src="{{ site.baseurl }}/img/outschool/outschool_sketches_compiled.jpg" style="margin: 24px 0px; max-width: 100%; border: 6px solid {{ page.bgcolor }}">
-        </div>
-        <div class="projsubsection">
+          <div class="row">
+            <div class="col-md-9">
+              <img src="{{ site.baseurl }}/img/outschool/outschool_sketches_compiled.jpg" style="margin: 24px 0px; max-width: 100%; border: 6px solid {{ page.bgcolor }}">
+            </div>
+            <div class="col-md-3">
+              <h5>Exploring dasbhoard layouts</h5>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="projsubsection">
           <h5>Wireframes</h5>
           <img src="{{ site.baseurl }}/img/outschool/outschool_wireframe.png" style="margin: 24px 0px; max-height: 680px; paddin-right: 16px;">
           <img src="{{ site.baseurl }}/img/outschool/outschool_wireframe_mobile.png" style="margin: 24px 0px; max-width: 50%; max-height: 680px;">
+        </div> -->
+      </div>
+    </div>
+
+    <div class="projsection">
+      <div class="container">
+        <h3>Version 1: Status visualization and resources</h3>
+        <div class="projsubsection">
+          <strong>To provide transparency, we created a status section</strong> at the top of the dashboard with an arrow visualization to make it easy for applicants to see where they were in the process.
+          The copy, CTA, and status change based on the applicant's stage.
+          <br /><br />
+          <strong>To increase engagement, we created a resources section</strong> below the status where users can learn about Outschool and stay engaged while they wait.
+          The colors were chosen to reflect a design pattern elsewhere in the Outschool site.
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <h6 style="color: {{ page.bgcolor }}">Desktop</h6>
+            <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v1.png" class="imgshadow mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <h6 style="color: {{ page.bgcolor }}">Mobile</h6>
+            <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v1_mobile.png" class="imgshadow" style="max-width: 100%;">
+          </div>
         </div>
       </div>
     </div>
+
+
     <div class="projsection">
       <div class="container">
-        <h3>Refining the solution</h3>
-        <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v1.png" style="padding: 24px 0px; max-width: 65%;">
-        <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v6.png" style="padding: 24px 0px; max-width: 65%;">
+        <h3>Version 2: A timeline and more interactivity</h3>
+        <div class="projsubsection">
+          <h5>Usability testing takeaways</h5>
+          After a round of usability testing, we learned that users:
+            <ul>
+              <li>Found the arrow visualization confusing and didn't understand what stage they were in.</li>
+              <li>Liked the resources provided but wanted to be able to take action based on their learnings.</li>
+            </ul>
+        </div>
+        <div class="projsubsection">
+          <h5>Resulting improvements</h5>
+          <strong>To improve clarity</strong> and better match an existing Outschool design pattern, we swapped the arrows out for a timeline.
+          <strong>For greater interactivity</strong>, we added cards to enable applicants to make changes to the class they created earlier in the application process,
+          and to schedule a call with an existing teacher.
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <h6 style="color: {{ page.bgcolor }}">Desktop</h6>
+            <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v5.png" class="imgshadow mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <h6 style="color: {{ page.bgcolor }}">Mobile</h6>
+            <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v5_mobile.png" class="imgshadow" style="max-width: 100%;">
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="projsection">
+
+    <div class="projsection" style="padding-bottom: 80px;">
       <div class="container">
-        <h3>Testing</h3>
+        <h3>Final Version: Emphasized focal point</h3>
+        <div class="projsubsection">
+          Given that our primary goal was to reduce dropoff, and the status section is what guides applicants through the process, we decided that we needed to further emphasize it.
+          <strong>To draw further attention to the status, we removed the colored backgrounds from the resource cards and increased the contrast of the status section by changing the background to white.</strong> We swapped out the illustrations to add back some visual interest to resources and maintain visual consistency with other parts of the site.
+        </div>
+
+        <div class="row projsubsection">
+          <div class="col-md-9">
+            <h6 style="color: {{ page.bgcolor }}">Desktop</h6>
+            <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v7.png" class="imgshadow mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <h6 style="color: {{ page.bgcolor }}">Mobile</h6>
+            <img src="{{ site.baseurl }}/img/outschool/outschool_midfi_v7_mobile.png" class="imgshadow" style="max-width: 100%;">
+          </div>
+        </div>
+
+        <div>
+          <h5>Status states</h5>
+          <div class="row">
+            <div class="col">
+              <h6 style="color: {{ page.bgcolor }}">State 1: Application submitted</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mb-4">
+              <img src="{{ site.baseurl }}/img/outschool/outschool_status_1.png" class="imgshadow" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3 mb-4">
+              The applicant first lands on this page when they submit their application. They're in this state until the Outschool team approves it.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h6 style="color: {{ page.bgcolor }}">State 2: Application approved</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mb-4">
+              <img src="{{ site.baseurl }}/img/outschool/outschool_status_2.png" class="imgshadow" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3 mb-4">
+              Once their application is approved, they need to complete a background check. This state is focused on encouraging them to start it.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h6 style="color: {{ page.bgcolor }}">State 3: Background check started</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mb-4">
+              <img src="{{ site.baseurl }}/img/outschool/outschool_status_3.png" class="imgshadow" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3 mb-4">
+              Background checks can take a few days. Once they've submitted their background check, they need to wait for it to be completed before they can become an Outschool teacher.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h6 style="color: {{ page.bgcolor }}">State 4: Background check complete</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mb-4">
+              <img src="{{ site.baseurl }}/img/outschool/outschool_status_4.png" class="imgshadow" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3">
+              When the check is complete, the user will be automatically taken to their teacher dashboard when they next visit Outschool.
+              They'll only see the application dashboard in this state if they visit its URL directly.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <div class="projsection" style="background: #f0f2f5; padding-bottom: 80px;">
+      <div class="container">
+        <div class="projsubsection">
+          <h5 style="color: {{ page.bgcolor }};">OUTCOME</h5>
+          <h3>Implementation</h3>
+          Throughout the design process, we worked with the engineering and operations teams to ensure that the final design would be relatively easy to implement
+          and would make an outsized impact on the Outschool experience.  Implementation of the new application status dashboard is planned for Q4 2019.
+        </div>
+          <h3>What's Next</h3>
+          Outschool runs its team on bi-monthly cycles and as a result, the timeline for design of the dashboard was fairly tight. With more time, I would rethink the entire application process to make it a smoother, more welcoming experience.
+          Currently, the applicant needs to fill out the application and then goes through the additional steps found in this dashboard. There's ample room to improve the user experience by further integrating this dashboard with the application itself.
+      </div>
+    </div>
+
   </div>
 </div>

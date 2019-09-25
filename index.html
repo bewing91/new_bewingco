@@ -2,10 +2,42 @@
 layout: main
 ---
 
+{% include navbar.html %}
 
+<!-- New Header -->
 
 <section id="cover">
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 order-md-12 mb-4 text-center">
+        <img src="{{ site.baseurl }}/img/linkedin_pic_teal.jpg" class="headshot">
+      </div>
+      <div class="col-md-7 order-md-1">
+        <h1>Hey, I’m <span>Ben</span>.</h1>
+        <br />
+        <div class="subheader">I’m a SF-based Product Designer with a passion for ethical design.</div>
+        <div id="social">
+          <a href="https://www.linkedin.com/in/ben-ewing/" target="blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+          <a href="https://angel.co/benjamin-ewing" target="blank"><i class="fab fa-angellist fa-2x" aria-hidden="true"></i></a>
+          <a href="mailto:ben@bewing.co" target="blank"><i class="far fa-envelope fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</section>
+
+
+
+<!-- Old Header -->
+
+<!--
+<section id="cover">
   <nav class="navbar navbar-expand-sm navbar-light">
       <div class="navbar-container">
           <button class="navbar-toggler ml-auto" type="button" onclick="openNav()" data-toggle="collapse" data-target="#navbar">
@@ -31,17 +63,15 @@ layout: main
     <h1><span>Ben Ewing.</span></h1>
     <div id="description">
       <h3>A Product Designer with a background in product and marketing.</h3>
-      <!--<span class="intro">
-        with a background in Product Marketing and Product.
-      </span>-->
     </div>
   </div>
 </section>
+-->
 
-<section id="portfolio" class="">
+<section id="portfolio" style="background: #f9f9f9;">
 
-<div class="container">
-  <h3 id="portfolioheader">Here are a few projects I worked on</h3>
+<div class="container-fluid">
+  <!--<h3 id="portfolioheader">Here's some of my recent work</h3>-->
   <div class="row">
 
     <!-- Outschool -->
@@ -55,7 +85,7 @@ layout: main
         <img src="{{ '/img/outschool/macbook_iphone_mock_outschool.png' | relative_url }}">
       </div>
       <div class="cardinfo">
-        <h4>Reducing dropoff in the application process</h4>
+        <h3>Reducing dropoff in the application process</h3>
         <div><a href="http://www.outschool.com">Outschool</a> &nbsp; • &nbsp; Responsive Web</div>
       </div>
     </div>
@@ -71,27 +101,14 @@ layout: main
         <img src="{{ '/img/craft/macbook_iphone_mock_craft.png' | relative_url }}">
       </div>
       <div class="cardinfo">
-        <h4>Making it easy to stay up-to-date on companies</h4>
+        <h3>Making it easy to stay up-to-date on companies</h3>
         <div><a href="http://www.craft.co" style="color: #46305D;">Craft.co</a> &nbsp; • &nbsp; Responsive Web</div>
       </div>
     </div>
 
-    <!-- Pillar -->
-    <div class="col-md-6">
-      <div id="pillarcard" class="card">
-        <a href="{{ '/projects/pillar.html' | relative_url }}">
-          <div class="projoverlayinv">
-            <span class="projinfo"></span>
-          </div>
-        </a>
-        <img src="{{ '/img/iphone_placeholder_mock.png' | relative_url }}">
-      </div>
-      <div class="cardinfo">
-        <h4>Helping borrowers understand and payoff their student loans</h4>
-        <div><a href="http://www.pillar.app" style="color: #ffabc1;">Pillar</a> &nbsp; • &nbsp; Native iOS</div>
-      </div>
-    </div>
 
+    <!-- Sense -->
+<!--
     <div class="col-md-6">
       <div id="sensecard" class="card">
         <a href="{{ '/projects/senselander.html' | relative_url }}">
@@ -100,13 +117,31 @@ layout: main
           </div>
         </a>
         <img src="{{ '/img/sense/senselander_macbook-iphonex.png' | relative_url }}">
-        <!-- <img class="projlogo" src="{{ '/img/sense-dark-logo.png' | relative_url }}"> -->
       </div>
       <div class="cardinfo">
         <h4>Increasing top of funnel engagement</h4>
         <div><a href="http://www.sense.com" style="color: #F9461C; a:hover { color: blue; }">Sense</a> &nbsp; • &nbsp; Responsive Web</div>
       </div>
     </div>
+-->
+
+    <!-- Pillar -->
+<!--
+    <div class="col-md-6">
+      <div id="pillarcard" class="card">
+          <div class="comingsoon">
+            <span class="projinfo">COMING SOON</span>
+          </div>
+        <img src="{{ '/img/iphone_placeholder_mock.png' | relative_url }}">
+        <h6 style="margin: auto; color: black;">COMING SOON</h6>
+      </div>
+      <div class="cardinfo">
+        <h4>Helping borrowers understand and payoff their student loans</h4>
+        <div><a href="http://www.pillar.app" style="color: #ffabc1;">Pillar</a> &nbsp; • &nbsp; Native iOS</div>
+      </div>
+    </div>
+-->
+
 
     <!-- LisaHealth
     <div class="col-md-6">
@@ -124,7 +159,7 @@ layout: main
       </div>
     </div>
     -->
-
+    <!--
     <div class="col-md-6">
       <div class="card">
         <a href="{{ '/projects/soundcloud.html' | relative_url }}">
@@ -139,7 +174,7 @@ layout: main
         <div><a href="http://www.soundcloud.com">Soundcloud</a> &nbsp; • &nbsp; Usability Study</div>
       </div>
     </div>
-
+    -->
   </div>
 </div>
 </section>
