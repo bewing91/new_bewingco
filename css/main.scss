@@ -89,6 +89,7 @@ a:hover {
 #cover {
   h1 {
     font-size: 3.5rem;
+    margin-bottom: 16px;
   }
 
   .subheader {
@@ -203,6 +204,7 @@ h1 span {
 
 .navbar-toggler {
   border: none;
+  padding-right: 0rem;
 }
 
 /* About section */
@@ -586,7 +588,12 @@ h1 span {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2rem;
+}
 
+@media screen and (max-width: 490px) {
+  .navlogo2 {
+    margin: 8px 0px;
+  }
 }
 
 #projheader {
