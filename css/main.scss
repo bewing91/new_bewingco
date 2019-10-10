@@ -82,7 +82,7 @@ a:hover {
 @media screen and (max-width: 490px) {
   #cover {
     padding-top: 144px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 
@@ -123,6 +123,16 @@ a:hover {
 }
 */
 
+#leadin {
+  padding-top: 176px;
+  color: gray;
+}
+
+@media screen and (max-width: 490px) {
+  #leadin {
+    padding-top: 80px;
+  }
+}
 
 #headshot {
   margin-top: 104px;
