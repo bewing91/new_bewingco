@@ -231,6 +231,14 @@ h1 span {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 490px) {
+  .aboutimg {
+    overflow: visible;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 .btn {
   margin-top: 10px;
   padding: .5rem 1.5rem;
