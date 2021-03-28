@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navbar.html %}
+    <div class="proj_thumb" style=" background: {{ page.bgcolor }};">
+      <div class="container" style="height: 100%; text-align: center;">
+        <img src="{{ site.baseurl }}/img/{{ page.hero_scrn }}" style="max-height: 100%; max-width:100%;">
+      </div>
+    </div>
+
+    <div id="projcontent" class="content">
+      <div class="container">
+        <div class="headlines">
+          <h1>{{ page.project_name }}</h1>
+          <h4><span style="color: {{ page.color }}">{{ page.company }}</span>  &nbsp; • &nbsp; {{ page.type }}</h4>
+        </div>
+
+        <div id="project_intro" class="row">
+
+
+          <div class="col-md-4">
+            <div id="results">
+              <h5>Results</h5>
+              {{ page.metrics }}
+              <br />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="scope">
+              <h5>Role</h5>
+              {{ page.scope | markdownify  }}
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="company">
+              <h5>Company</h5>
+              {{ page.background }}
+            </div>
+          </div>
+
+<!--
+          <div class="col-md-12">
+            <div id="challenge">
+              <h5>The Challenge</h5>
+              {{ page.challenge | markdownify }}
+            </div>
+          </div>
+        -->
+        </div>
+      </div>
+      <div class="casestudy">
+        {{ content }}
+      </div>
+
+
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

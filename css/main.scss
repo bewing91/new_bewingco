@@ -8,6 +8,12 @@ body, p {
  font-family: 'Open Sans', sans-serif;
 }
 
+.skinny {
+  padding: 0px 8px 0px 8px;
+}
+
+/* 'Inconsolata', monospace; */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -287,6 +293,17 @@ h1 span {
 
 #portfolioheader{
   margin-bottom: 36px;
+}
+
+
+.earnestcard {
+
+  background-color: #EBE4F6 !important;
+
+  img {
+    max-width: 26% !important;
+  }
+
 }
 
 #craftcard {
