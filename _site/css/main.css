@@ -1,0 +1,288 @@
+/* Global */
+body, p { font-family: 'Open Sans', sans-serif; }
+
+.skinny { padding: 0px 8px 0px 8px; }
+
+/* 'Inconsolata', monospace; */
+h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; font-weight: 600; }
+
+h3, h5, h6 { line-height: 1.33; }
+
+body { font-size: 18px; }
+
+.fa-2x { font-size: 1.8rem; }
+
+a { color: #17A2B8; }
+
+a:hover { color: #138395; }
+
+#projcontent { font-size: 18px; }
+
+@media screen and (min-width: 1200px) { .container { max-width: 960px; } }
+a:hover { text-decoration: none; }
+
+.imgshadow { box-shadow: 0px 1px 16px 2px lightgray; }
+
+/* Cover */
+/*
+#cover { height: 640px; max-width: 100%; position: relative; background-image: linear-gradient(0deg,rgba(38,38,38,0.1),rgba(38,38,38,0.1)),url("../img/backgroundimg.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 50% 75%; background-color: #262626; color: white;
+}
+
+
+@media screen and (max-width: 490px) { #cover { background-position: 35% 50%; }
+}
+
+*/
+#cover { padding-top: 272px; padding-bottom: 32px; }
+
+@media screen and (max-width: 490px) { #cover { padding-top: 144px; padding-bottom: 40px; } }
+#cover h1 { font-size: 3.5rem; margin-bottom: 16px; }
+#cover .subheader { font-size: 2.0rem; }
+
+@media screen and (max-width: 490px) { #cover h1 { font-size: 2rem; }
+  #cover .subheader { font-size: 1.25rem; } }
+#cover a { color: white; }
+
+#cover a:hover { color: #f1f1f1; }
+
+/*
+#cover { background-image: linear-gradient(0deg,rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url("https://images.all-free-download.com/images/graphiclarge/black_speckle_texture_vector_583162.jpg");
+}
+*/
+#leadin { padding-top: 176px; color: gray; }
+
+@media screen and (max-width: 490px) { #leadin { padding-top: 80px; } }
+#headshot { margin-top: 104px; }
+#headshot .intro { font-size: 20px; }
+#headshot #description { margin-top: 24px; width: 35%; }
+#headshot #subdescription { width: 83%; }
+
+@media screen and (max-width: 490px) { #headshot { margin-top: 64px; }
+  #headshot #description { width: 56%; } }
+@media screen and (max-width: 575.98px) { #subdescription { display: none; } }
+/*
+h1 span { background-color: #17A2B8; border: solid #17A2B8; border-width: 0px 16px; color: white;
+}
+*/
+#navmenu { position: absolute; bottom: 5px; right: 0; text-transform: uppercase; }
+
+@media screen and (max-width: 490px) { #navmenu { display: none; } }
+.navbar-brand { padding-top: 4px !important; padding-bottom: 4px !important; }
+
+/*
+.navbar-brand h1 { margin-bottom: 0px;
+}
+*/
+#navbar .nav-link { font-size: 24px; padding-right: 1rem !important; padding-left: 1rem !important; }
+
+.navbar-container { display: flex; width: 100%; }
+
+.navbar-toggler { border: none; padding-right: 0rem; }
+
+/* About section */
+#about { padding-top: 30px; padding-bottom: 50px; background-color: #ffffff; }
+
+.aboutimg { height: 440px; overflow: hidden; margin-bottom: 40px; }
+
+@media screen and (max-width: 490px) { .aboutimg { overflow: visible; height: auto; max-width: 100%; } }
+.btn { margin-top: 10px; padding: .5rem 1.5rem; border-radius: 0rem; background: #17A2B8; font-weight: 500; font-size: 1rem; color: #ffffff; }
+
+.btn:hover { background: #127d8f; color: #ffffff; }
+
+.graphics { padding-top: 40px; text-align: center; }
+
+/* Skills section */
+#skills { padding-top: 30px; padding-bottom: 50px; background-color: #f2f2f2; }
+
+.progress { height: .9rem; width: 85%; border-radius: 0rem; background-color: #b9e3e9; }
+
+/* Portfolio section */
+#portfolio { padding-top: 56px; padding-bottom: 32px; margin-bottom: 0px; max-width: 100%; }
+
+#portfolioheader { margin-bottom: 36px; }
+
+.earnestcard { background-color: #EBE4F6 !important; }
+
+#craftcard { background-color: #5E526A !important; }
+
+#sensecard { background-color: #fac7bb !important; display: flex; }
+
+#outschoolcard { background-color: #96A7B9 !important; }
+
+#pillarcard { background-color: #FFEAEF !important; }
+#pillarcard img { max-width: 95%; }
+
+#lisahealthcard { background-color: #728587 !important; }
+
+.card { height: 480px; margin-bottom: 16px; border: 0px; background-color: #f1f1f1; border-radius: 0rem; text-align: center; color: #ffffff; }
+
+@media screen and (max-width: 490px) { .card { height: 300px; } }
+.card a { color: black; }
+
+.card img { max-width: 82%; margin: auto; }
+
+.projlogo { height: 16px; position: absolute; bottom: 8px; right: 8px; }
+
+.cardinfo { margin-bottom: 36px; }
+
+.projoverlay { background-color: #f9f9f9; height: 100%; left: 0; opacity: .0; position: absolute; top: 0; width: 100%; z-index: 2; transition: opacity .3s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; /* border: 1px solid #17A2B8; */ }
+
+.projoverlay:hover { opacity: .95; }
+
+.projoverlayinv { background-color: white; height: 100%; left: 0; opacity: .0; position: absolute; top: 0; width: 100%; z-index: 2; transition: opacity .3s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.projoverlayinv:hover { opacity: .6; }
+
+.comingsoon { background-color: white; height: 100%; left: 0; opacity: 0; position: absolute; top: 0; width: 100%; z-index: 2; transition: opacity .3s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.projinfo { font-size: 1.5rem; }
+
+#portfolio h5 { margin-bottom: 0px; }
+
+.projorg { margin-bottom: .25rem; font-size: .9rem; color: gray; }
+
+.skilltag { padding: 4px 8px; margin: 2px; border: 1px solid #17A2B8; border-radius: 4px; font-size: .75rem; color: #17A2B8; display: inline-block; }
+
+.skilltagset { margin-bottom: 40px; }
+
+/* Hire section */
+#hire { height: 240px; max-width: 100%; position: relative; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/bgpic1.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 50% 62%; background-color: #262626; color: #17A2B8; }
+
+#hireCTA { padding-top: 45px; text-align: center; letter-spacing: .06rem; }
+
+#CTAtext { font-size: 1.5rem; font-weight: 500; margin-bottom: .9rem; }
+
+#CTAsubtext { margin-bottom: 1.2rem; /* color: gray; */ }
+
+#CTAsubtext span { display: block; }
+
+@media screen and (max-width: 552px) { #CTAsubtext span { display: inline; } }
+@media screen and (max-width: 431px) { #CTAsubtext { display: none; } }
+.hirebutton { padding: 4px 8px; margin: 2px; border: 1px solid #17A2B8; border-radius: 4px; background-color: transparent; color: #17A2B8; letter-spacing: normal; display: inline-block; }
+
+.hirebutton:hover { padding: 4px 8px; margin: 2px; border: 1px solid #17A2B8; border-radius: 4px; background-color: #17A2B8; color: white; text-decoration: none; display: inline-block; }
+
+/* Footer Section */
+#social { margin-top: 32px; margin-bottom: 24px; color: gray; }
+
+#social i { padding-right: 6px; }
+
+#social a { color: black; }
+
+#social a:hover { color: gray; }
+
+#byline { margin-top: 64px; text-align: center; color: gray; font-size: 1rem; }
+
+/* Project page */
+.proj_thumb { margin-top: 72px; height: 624px; padding: 72px 0px; /* margin-top: 144px;
+height: 480px; */ background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+@media screen and (max-width: 490px) { .proj_thumb { height: auto; padding: 144px 0px; } }
+#projcontent { margin-top: 24px; }
+
+.projsection { padding-top: 80px; /*
+h5 { margin-bottom: 16px;
+}
+*/ }
+.projsection .projsubsection { margin-bottom: 48px; }
+.projsection h3 { margin-bottom: 32px; }
+
+#project_intro #scope, #project_intro #my_role, #project_intro #results, #project_intro #company, #project_intro #challenge { margin-bottom: 16px; }
+
+#project_intro:after { content: ""; display: block; margin: 0 auto; width: 97%; padding-top: 16px; border-bottom: 2px solid black; }
+
+#project_intro:before { content: ""; display: block; margin: 0 auto; width: 97%; padding-bottom: 16px; border-top: 2px solid black; }
+
+.navlogo { margin: 16px; }
+
+.navlogo2 { margin: 16px; font-weight: 400; font-size: 2rem; line-height: 2rem; }
+
+@media screen and (max-width: 490px) { .navlogo2 { margin: 8px 0px; } }
+#projheader { margin-top: 40px; padding-top: 20px; }
+
+#projheader .container { background-color: white; }
+
+#projheader h3 { margin-bottom: 10px; text-align: center; }
+
+.projheader_name { background-color: white; position: relative; padding: 10px; }
+
+#projheader:before { border-left: 4px solid #17A2B8; border-right: 4px solid #17A2B8; border-top: 4px solid #17A2B8; content: " "; height: 40px; left: 6%; position: absolute; right: 6%; top: 20%; }
+
+#projheader .skilltagset { margin-bottom: 20px; }
+
+.projdivider { width: 80%; border-top: 1px solid #b9e3e9; margin-bottom: 30px; }
+
+#projdisplay .container { padding-bottom: 40px; }
+
+#projimages img { vertical-align: top; }
+
+.projdesc { font-size: 1.3rem; font-weight: 600; }
+
+#final_designs { padding: 16px 0px; background: #f1f1f1; text-align: center; }
+
+/* Casestudy */
+.headlines { padding: 48px 0px 48px 0px; }
+
+.casesection { margin-bottom: 56px; }
+
+.casesection h5 { padding-bottom: 16px; }
+
+#casestudy_intro { padding-top: 16px; padding-bottom: 16px; margin-bottom: 48px; }
+
+@media screen and (max-width: 767.8px) { #scope { margin-bottom: 16px; } }
+#results_desc { padding-bottom: 32px; }
+
+#result_scrns { padding-bottom: 32px; }
+
+.result_scrn { text-align: center; }
+
+.result_deets { min-height: 72px; }
+
+.result_scrn img { padding: 16px 0px 16px 0px; }
+
+#taskchart { text-align: center; }
+
+#jbtd { margin-bottom: 48px; }
+
+#jbtd img { max-width: 90%; }
+
+#usability img { width: 100%; }
+
+#analysis img { max-width: 90%; }
+
+#analysis { margin-bottom: 36px; }
+
+#painpts_desc { padding-bottom: 32px; }
+
+#painpts img { max-width: 90%; }
+
+.painpt { padding-bottom: 32px; }
+
+#prototype h6 { float: none; }
+
+/* About */
+#aboutme { margin-top: 72px; padding: 80px 0px; }
+
+.headshot { border-radius: 50%; width: 90%; }
+
+@media screen and (max-width: 490px) { .headshot { width: 80%; } }
+#music { padding: 80px 0px; background: #f9f9f9; }
+
+/* Overlay Nav */
+.overlay { height: 100%; width: 100%; position: fixed; z-index: 2000; left: 0; top: 0; background-color: white; background-color: rgba(255, 255, 255, 0.96); overflow-x: hidden; transition: 0.5s; display: none; }
+
+/* Position the content inside the overlay */
+.overlay-content { position: relative; top: 25%; /* 25% from the top */ width: 100%; /* 100% width */ text-align: center; /* Centered text/links */ margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+
+/* The navigation links inside the overlay */
+.overlay a { padding: 8px; text-decoration: none; font-size: 36px; color: #818181; display: block; /* Display block instead of inline */ transition: 0.3s; /* Transition effects on hover (color) */ }
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus { color: #f1f1f1; }
+
+/* Position the close button (top right corner) */
+.overlay .closebtn { padding: 0px !important; position: absolute; top: 0px; right: 32px; font-size: 40px; }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) { .overlay a { font-size: 20px; }
+  .overlay .closebtn { font-size: 40px; top: 0px; right: 32px; } }

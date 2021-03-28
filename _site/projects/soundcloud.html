@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114201361-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114201361-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta property="og:image" content="/img/favicon.png">
+  <meta property="og:description" content="Ben Ewing is an SF-based Product Designer with a background in product management and product marketing." />
+  <meta property="og:type" content="website">
+
+  <title>Ben Ewing - Product Designer</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata|Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.typekit.net/gqj1akj.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+
+
+
+</head>
+
+  <body>
+    
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+    <div class="navbar-container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <h1 class="navlogo2">Ben Ewing</h1>
+            </a>
+        </div>
+        <button class="navbar-toggler ml-auto" type="button" onclick="openNav()" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbar" class="navbar-collapse collapse justify-content-end">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/#portfolio">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+/* Open */
+function openNav() {
+  document.getElementById("mobileNav").style.display = "block";
+  document.getElementByClass("content").style.overflow = "hidden";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("mobileNav").style.display = "none";
+}
+</script>
+
+<!-- The overlay -->
+<div id="mobileNav" class="overlay">
+ <!-- Button to close the overlay navigation -->
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ <!-- Overlay content -->
+ <div class="overlay-content">
+   <a href="/index.html#portfolio">Work</a>
+   <a href="/about.html">About</a>
+ </div>
+
+</div>
+
+
+    <div class="proj_thumb" style="background-image: url(/img/); background: #FF5500;">
+      <div class="container" style="height: 100%; text-align: center;">
+        <img src="/img/soundcloud/feed_mock.png" height="90%" style="margin-top: 50px;">
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="headlines">
+          <h1>Making it easier to discover new music and artists with Soundcloud</h1>
+          <h5>A Usability Case Study</h5>
+        </div>
+
+        <div id="casestudy_intro" class="row" style="background: #f1f1f1;">
+          <div class="col-md-4">
+            <div id="my_role">
+              <h5>My Role</h5>
+              Individual product designer (not affiliated with Soundcloud)
+              <br />
+            </div>
+            <div id="scope">
+              <h5>The Scope</h5>
+              Usability Testing, Painpoint Analysis, Sketching, Hi Fidelity Mockups, Prototyping
+              <br />
+            </div>
+          </div>
+          <div id="challenge" class="col-md-8">
+            <h5>The Challenge</h5>
+            Soundcloud is a music platform that makes it easy for artists to share their music and for fans to discover and listen to it. As a musician and avid music fan, it's important to me that discovery is the best it can be. With that in mind, I conducted a two week case study to uncover how might we make discovery easier on Soundcloud.
+
+          </div>
+        </div>
+
+        <div class="casestudy">
+          <section id="results" class="casesection container">
+  <h3>Results</h3>
+  <div id="results_desc">
+    With Soundcloud's design current design patterns in mind, I made changes to make discovery easier within the app.
+  </div>
+  <div id="result_scrns" class="row">
+    <div class="result_scrn col-md-4">
+      <div class="text-left">
+        <h5>Search</h5>
+        <p class="result_deets">Added genre browsing and filtering, and popularity filter to search to improve browsability.</p>
+      </div>
+      <img src="/img/soundcloud/search_mock_phone1.png" width="80%">
+    </div>
+    <div class="result_scrn col-md-4">
+      <div class="text-left">
+        <h5>Feed</h5>
+        <p class="result_deets">Added tabbed navigation to filter feed and changed header to 'Latest' for increased clarity.</p>
+      </div>
+      <img src="/img/soundcloud/feed_mock.png" width="80%">
+    </div>
+    <div class="result_scrn col-md-4">
+      <div class="text-left">
+        <h5>Artist Screen</h5>
+        <p class="result_deets">Updated 'Tracks' header to 'Latest Tracks' and added year to improve identification.</p>
+      </div>
+      <img src="/img/soundcloud/artist_mock.png" width="80%">
+    </div>
+  </div>
+  <div id="taskchart">
+    <img src="/img/soundcloud/Before_After.png" width="600px">
+  </div>
+</section>
+
+<section id="approach" class="casesection">
+  <h3>Approach</h3>
+  <div>
+    <img src="/img/Approach.png" width="100%">
+  </div>
+</section>
+
+<section id="empathize" class="casesection">
+  <h3>Empathize</h3>
+  <div id="jbtd">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Jobs to be done</h5>
+        In order to better understand the user and frame how they use Soundcloud, I created three job stories, each for a common user behavior.
+      </div>
+      <div class="col-md-8 text-center">
+        <img src="/img/JBTD.png">
+      </div>
+    </div>
+  </div>
+  <div id="usability">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="/img/soundcloud/phonehands2.jpg">
+      </div>
+      <div class="col-md-4">
+        <h5>Usability Testing</h5>
+        <p>To identify painpoints in the app, I conducted 6 guerilla usability tests in the coffee shops of San Francisco.
+        To test different aspects of the app, I asked each participant to complete a few tasks within the app.
+        <br /><br />
+        All of the people I tested were in their 20s and 30s, regularly listened to music and were familiar with Soundcloud.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="define" class="casesection">
+  <h3>Define</h3>
+  <div id="analysis">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Synthesis & Analysis</h5>
+        After the tests, I reviewed the recordings and notes that I had taken, and made note of points of frustration and confusion that people experienced while attempting to complete the tasks.
+        <br /><br />
+        I collected these insights on post-its and created an Affinity Map, grouping them into pain point themes like 'Search Filtering' and 'Navigating the Feed.'
+      </div>
+      <div class="col-md-8 text-center">
+        <img src="/img/Affinity_Map.jpg">
+      </div>
+    </div>
+
+  </div>
+  <div class="prioritization">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="/img/Prioritization.jpg" width="100%">
+      </div>
+      <div class="col-md-4">
+        <h5>Prioritization</h5>
+        In order to prioritize the pain points and decide which were most important to focus on, I mapped them on a 2x2 matrix based on user impact and level of effort for implementation.
+        I wanted to identify which pain points, when addressed, would give Soundcloud the best bang for its buck with regards to impacting its user base and business.
+        <br /><br />
+        Given that Soundcloud's business model relies on subscription revenue from engaged users, I decided that in this case, user impact and business impact were closely aligned.
+      </div>
+    </div>
+  </div>
+  <div id="painpts">
+    <div id="painpts_desc">
+      <h5>Pain Points</h5>
+      Prioritizing these pain points made it clear that users were struggling with discovery in Soundcloud, in three specific ways.
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="painpt">
+          <h6>Pain Point #1: Browsing content</h6>
+          <p>Users found it difficult to browse for artists and other content.</p>
+          <br />
+          <img src="/img/soundcloud/Search_before.png">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="/img/soundcloud/TaskFlow_Search.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="">
+          <h6>Pain Point #2: Navigating the feed</h6>
+          <p>Users struggled to understand the feed with ambiguous labeling like "Stream" and a lightning icon. Those that did found it frustrating to find new content from artists they follow, arguably one of the feed's key purposes.</p>
+          <br />
+          <img src="/img/soundcloud/Stream_before.png">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="">
+          <h6>Pain Point #3: Artist new releases</h6>
+          <p>Users couldn't identify what was new on an artist's page.
+             It wasn't clear to them how some sections were sorted, specifically the "Tracks" section.
+           </p>
+          <br />
+          <img src="/img/soundcloud/Artist_before.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ideate" class="casesection">
+  <h3>Ideate</h3>
+  <div class="diverge">
+    With the pain points identified, I began to explore the solution space. For each point, I sketched several potential solutions, keeping in mind common design patterns in use in Soundcloud and other popular apps.
+    <br /><br />
+    <div class="row">
+      <div class="col-md-4">
+        <h6>Browsing content</h6>
+        <br />
+        <img src="/img/soundcloud/search_sketches_highlights.png" style="max-width: 100%;">
+      </div>
+      <div class="col-md-4">
+        <h6>Navigating the feed</h6>
+        <br />
+        <img src="/img/soundcloud/feed_sketches_highlights.png" style="max-width: 100%;">
+      </div>
+      <div class="col-md-4">
+        <h6>Artist new releases</h6>
+        <br />
+        <img src="/img/soundcloud/artist_sketches_highlights.png" style="max-width: 100%;">
+      </div>
+      <div>
+        <br />
+        <p>In deciding on solutions, I considered the ease of implementation and impact of each design.
+          I tried to rely on existing design patterns in the Soundcloud app as much as possible to cut down on potential development time
+          and ripple effects. Some ideas, like dropdown menus for search filtering, while I felt were one of the best options from a UX perspective,
+          I decided against because they would have required introduction of a new pattern within the app, and I felt the pain point could be
+          adequately solved through a filter overlay, which already existed elsewhere in the app.</p>
+
+          In each case, I took elements from multiple sketches and combined them into what I thought maximized impact and minimized cost.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="prototype" class="casesection">
+  <h3>Prototype</h3>
+  <p>
+    <a href="https://invis.io/J6SJAVMWSA4#/368720638_Home_Screen">Check out the prototype for yourself</a>
+  </p>
+  <div>
+    <h5>Pain Point #1: Browsing content</h5>
+    <br />
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h6>Before</h6>
+        <br />
+        <img src="/img/soundcloud/search_before_phone.png" width="70%">
+        <br /><br />
+        <img src="/img/soundcloud/search_before_phone2.png" width="70%">
+      </div>
+      <div class="col-md-6 text-center">
+        <h6>After</h6>
+        <br />
+        <img src="/img/soundcloud/search_mock_phone1.png" width="70%">
+        <br /><br />
+        <img src="/img/soundcloud/search_mock_phone_animation.gif" width="70%">
+      </div>
+    </div>
+    <br /><br />
+    <h5>Pain Point #2: Navigating the feed</h5>
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h6>Before</h6>
+        <br />
+        <img src="/img/soundcloud/stream_before_phone.png" width="70%">
+      </div>
+      <div class="col-md-6 text-center">
+        <h6>After</h6>
+        <br />
+        <img src="/img/soundcloud/feed_mock.png" width="70%">
+      </div>
+    </div>
+    <br /><br />
+    <h5>Pain Point #3: Artist new releases</h5>
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h6>Before</h6>
+        <br />
+        <img src="/img/soundcloud/artist_before_phone.png" width="70%">
+      </div>
+      <div class="col-md-6 text-center">
+        <h6>After</h6>
+        <br />
+        <img src="/img/soundcloud/artist_mock.png" width="70%">
+      </div>
+    </div>
+    <br /><br />
+  </div>
+</section>
+
+<section id="test">
+  <h3>Test</h3>
+  <div>
+    <img src="/img/soundcloud/Before_After.png" width="600px">
+  </div>
+</section>
+
+        </div>
+
+
+      </div>
+    </div>
+    <section id="byline">
+  <div>
+    Designed and developed by yours truly. 2021.
+  </div>
+</section>
+
+<section id="social" class="container text-center">
+  <div class="">
+    <a href="https://www.linkedin.com/in/ben-ewing/" target="blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+    <a href="https://angel.co/benjamin-ewing" target="blank"><i class="fab fa-angellist fa-2x" aria-hidden="true"></i></a>
+    <a href="mailto:ben@bewing.co" target="blank"><i class="far fa-envelope fa-2x" aria-hidden="true"></i></a>
+  </div>
+</section>
+
+  </body>
+</html>
