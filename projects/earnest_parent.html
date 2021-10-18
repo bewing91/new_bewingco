@@ -1,0 +1,228 @@
+---
+layout: project2
+project_name: Offering a new type of student loan to parents
+company: Earnest
+type: Web app
+scope: Sole **Product Designer**, working closely with a Product Manager, UX Researcher, Visual Designer, and team of 6 Engineers.
+tools:
+metrics: Launched Q2 2021. In its first season, captured over $2.6M in volume with a conversion rate 40% higher than our other flows.
+thumbnail: newlander_projthumb.jpg
+background: Earnest is a technology-enabled student loan lender and refinancer.
+challenge: >
+  Over 50% of Earnest's cosigned loan applicants lived together and attemped to complete the 2-player application on 1 device. Given the product didn't
+  support this behavior, **>30% experienced issues** completing their application in this way. I set out to design a flow to accomodate this behavior
+  and give these users a smoother experience.
+
+hero_scrn: /earnest/PL/earnest_pl_header.png
+color: '#1BB580'
+bgcolor: '#EBE4F6'
+---
+
+
+<div class="process">
+  <div id="solution">
+
+    <div class="projsection container" style="padding-bottom: 80px;">
+      <h5 style="color: #766F9B;">SELECTED SCREENS</h5>
+      <h3>A simple way to select the right loan and apply for it</h3>
+
+      <div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Role_Selection.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Loan_Type.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Timeline.png" style="max-width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="challenge" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+
+      <div class="container">
+        <h5 style="color: #766F9B;">THE CHALLENGE</h5>
+        <h3>Parents needed to be able to select and apply for the right loan</h3>
+
+        <div class="">
+          <p>To meet an unmet need in education financing and to capture additional volume via a partnership agreement, Earnest wanted to launch a
+            new Parent Loan product. With the addition of this new loan, users would have a total of 3 types to pick from. In order to ensure that
+            users were able to select the right type of loan for them and apply for the Parent Loan when that was the best option, <strong>I needed to both
+            redesign our top of funnel for all of our applications and design a smooth application for Parent Loans</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="strategy" class="projsection" style="padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">STRATEGY</h5>
+        <h3>An MVP to Build Upon</h3>
+
+        <div class="">
+          <p>Due to marketing partnership dependencies, the timeline for the Parent Loan project was relatively short. With that in mind, we focused
+            on delivering an MVP that was able to direct applicants to the best loan for them and, should they choose a parent loan, make
+            it a quick and simple application process. <strong>To cut down on engineering cost, I relied heavily on existing patterns and components</strong>
+            that were already in production across our existing products and focused on developing an architecture that would meet our needs without
+            adding scope.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="research" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">RESEARCH</h5>
+        <h3>Understanding why parents take out Parent Loans</h3>
+
+        <div class="">
+          <p>Given that we were launching a new loan product, we wanted to have a strong understanding of why parents took Parent Loans,
+            particularly over cosigning a Student Loan. We conducted a round of exploratory research, interviewing 10 parents:
+            5 who took Parent Loans, and 5 who cosigned a Student Loan after considering a Parent Loan. Based on these conversations
+            we learned a couple key things:
+          </p>
+          <div class="row">
+            <div class="col-md-6" style="padding-right: 40px; padding-bottom: 24px;">
+              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Few parents know off the bat that they want parent loans</strong></div>
+              Savvy parents looked for lowest rate regardless of loan type.
+              Others took parent loans as a last resort.
+            </div>
+            <div class="col-md-6" style="padding-right: 40px; padding-bottom: 24px;">
+              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Parents choose cosigned loans to build their child's credit</strong></div>
+              Parents who considered both Parent and Cosigned Loans and went with Cosigned did so to help their child build credit.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="architecture" class="projsection" style="padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">INFORMATION ARCHITECTURE</h5>
+        <h3>Structuring the application to be quick and clear</h3>
+
+        <p>In order to make the application quick and clear for the parents filling it out, I explored four different
+           flow architectures with various form segmentations. Ultimately we decided to move forward with the <strong>Single Student Form</strong>
+           architecture as it offered clarity with separate forms for each user, without fragmenting the experience too much.
+        </p>
+        <br />
+        <div class="row">
+          <div class="col-md-3 fadeInOut">
+            <h5 class="mb-4">Arch 1: <br/>Single Form</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_1.png" class="mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3 fadeInOut">
+            <h5 class="mb-4">Arch 2: <br/>Two Form</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_2.png" class="mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-4" style="color: #1BB580;">Arch 3: <br/>Single Student Form</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_3.png" class="mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3 fadeInOut">
+            <h5 class="mb-4">Arch 4: <br/>One-at-a-Time</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_4.png" class="mb-4" style="max-width: 100%;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="topoffunnel" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+
+      <div class="container">
+        <h5 style="color: #766F9B;">EXPLORATION: TOP OF FUNNEL</h5>
+        <h3>How might we make it easy for users to select the right loan for them?</h3>
+
+        <div style="margin-bottom: 32px;">
+          <p>In adding a new loan product to Earnest's offering, I needed to reassess and restructure the top of funnel of our applications to ensure
+            that users were able to select and apply for the right loan. I outlined the personas that needed to be accounted for and explored some architectures
+            for the top of funnel. We ultimately landed on the <strong>Two-Step as the best option</strong> to serve all personas (especially given the
+            breakdown of the personas and additional engineering constraints).</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="mb-4" style="color: #1BB580;">Option 1: <br/>Two-Step</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_1.png" class="mb-4" style="max-width: 88%;">
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-4">Option 2: <br/>Reverse Two-Step</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_2.png" class="mb-4" style="max-width: 88%;">
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-4">Option 3: <br/>3 Roles</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_3.png" class="mb-4" style="max-width: 88%;">
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-4">Option 4: <br/>Separated</h5>
+            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_4.png" class="mb-4" style="max-width: 100%;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="refinement" class="projsection" style="padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">THE SOLUTION</h5>
+        <h3 style="margin-bottom: 40px;">The Form Architecture: Quick and clear</h3>
+
+        <div class="row" style="margin-bottom: 48px;">
+          <div class="col-md-12">
+            <img src="{{ site.baseurl }}/img/earnest/PL/final_arch.png" class="mb-4" style="max-width: 100%;">
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: 40px;">The Top of Funnel: Guiding users to the right loan</h3>
+
+        <!-- <h5 class="mb-4">Top of Funnel Architecture</h5> -->
+        <div class="row" style="margin-bottom: 48px;">
+          <!-- <div class="col-md-4">
+            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_1.png" class="mb-4" style="max-width: 88%;">
+          </div>-->
+          <div class="col-md-12 mb-4" align="center">
+            <video autoplay loop muted playsinline src="{{ site.baseurl }}/img/Earnest/PL/tofu_recording_slow.mp4" style="max-width: 375px;"></video>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: 40px;">The Application</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Timeline.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="{{ site.baseurl }}/img/earnest/pl/PL_AppStart.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Results.png" style="max-width: 100%;">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="challenge" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+
+      <div class="container">
+        <h5 style="color: #766F9B;">OUTCOME</h5>
+        <h3>A successful launch and first season</h3>
+
+        <div class="">
+          <p>The parent loan product launched in June of 2021 and was a big success. It met our loan volume targets for the year and <strong>converted ~40%
+            higher</strong> than our other application flows. The changes to the top of funnel likewise met the goal of not negatively impacting our other
+            application flow conversion rates. Most importantly, Parents were able to cover the cost of their child's education
+            in a way that they hadn't before.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

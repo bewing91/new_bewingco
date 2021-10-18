@@ -28,7 +28,7 @@
 
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata|Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.typekit.net/gqj1akj.css">
   <link rel="stylesheet" href="/css/main.css">
@@ -94,14 +94,14 @@ function closeNav() {
 
     <div class="proj_thumb" style=" background: #EBE4F6;">
       <div class="container" style="height: 100%; text-align: center;">
-        <img src="/img//earnest/CHO/earnest_cho_header.png" style="max-height: 100%; max-width:100%;">
+        <img src="/img//earnest/earnest_rc_header.png" style="max-height: 100%; max-width:100%;">
       </div>
     </div>
 
     <div id="projcontent" class="content">
       <div class="container">
         <div class="headlines">
-          <h1>Rate Check</h1>
+          <h1>Offering a rate check to student loan applicants</h1>
           <h4><span style="color: #1BB580">Earnest</span>  &nbsp; • &nbsp; Web app</h4>
         </div>
 
@@ -146,18 +146,18 @@ function closeNav() {
 
     <div class="projsection container" style="padding-bottom: 80px;">
       <h5 style="color: #766F9B;">SELECTED SCREENS</h5>
-      <h3>A seamless 2-player loan application</h3>
+      <h3>A way to get personalized rates before applying for a loan</h3>
 
       <div>
         <div class="row">
           <div class="col-md-4 mb-4">
-            <img src="/img/earnest/earnest_ch_togetherseparately_phone.png" style="max-width: 100%;">
+            <img src="/img/earnest/rc/earnest_rc_timeline_phone.png" style="max-width: 100%;">
           </div>
           <div class="col-md-4 mb-4">
-            <video autoplay loop muted playsinline src="/img/Earnest/CHO_SwitchAnimation_Phone_btr.mp4" style="max-width: 100%;"></video>
+            <video autoplay loop muted playsinline src="/img/Earnest/rc/earnest_rc_results1_phone_animated.mp4" style="max-width: 100%;"></video>
           </div>
           <div class="col-md-4 mb-4">
-            <img src="/img/earnest/earnest_ch_timeline2_phone.png" style="max-width: 100%;">
+            <img src="/img/earnest/rc/earnest_rc_results2_phone.png" style="max-width: 100%;">
           </div>
         </div>
       </div>
@@ -167,27 +167,214 @@ function closeNav() {
 
       <div class="container">
         <h5 style="color: #766F9B;">THE CHALLENGE</h5>
-        <h3>Co-located users struggled to fill out an application together</h3>
+        <h3>Applicants lacked the confidence to apply</h3>
 
         <div class="">
-          <p>Over 50% of Earnest's cosigned loan applicants lived together and attemped to complete the 2-player application on 1 device. Given the product didn't
-            support this behavior, <b>30% experienced issues</b> completing their application in this way. We set out to solve this problem to give these co-located users
-            a smoother experience, and ultimately increase conversion.
-            <br /><br />
-            <p><b>Existing Experience</b></p>
-          </p>
-          <div>
-            <img src="/img/earnest/CHO/CHO_taskflow_before2.png" style="width:100%;">
+          <p>In order to learn what rates Earnest would offer them, applicants had to submit a full application and incur a hard pull on their credit.
+             Given that rate was a key part of their decision making process, <strong>many applicants lacked the confidence to submit an application without rate estimates</strong> and dropped off.
+            We set out to give users confidence to submit an application by introducing a rate check in the application process.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="architecture" class="projsection" style="padding-bottom: 56px;">
+
+      <div class="container">
+        <h5 style="color: #766F9B;">INFORMATION ARCHITECTURE</h5>
+        <h3>Understanding how a rate check fits into our existing application</h3>
+
+        <div style="margin-bottom: 32px;">
+          <p>In order to deliver rate estimates, we needed to restructure the top of our application flow to collect a different set of information and perform a softpull on the applicant's credit.
+          I explored a number of architectures before settling on one that would streamline our application flow while enabling rate check functionality.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="mb-4">Existing Architecture</h5>
+            <img src="/img/earnest/RC/rc_existing_architecture.png" style="padding: 0px 16px; max-width: 100%;">
+          </div>
+          <div class="col-md-6">
+            <h5 class="mb-4">New Architecture</h5>
+            <img src="/img/earnest/RC/rc_new_architecture.png" style="padding: 0px 16px; max-width: 100%;">
           </div>
         </div>
       </div>
     </div>
 
 
+    <div id="exploration" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">EXPLORATION</h5>
+        <h3>How might we leverage a rate check to give applicants the confidence they need to finish applying?</h3>
+
+        <p style="padding-bottom: 32px;">Given that users needed rate information to feel confident applying, I began exploring varying amounts of information we could show and ways
+          we could present that information, weighing the tradeoff between providing <strong>too much information and bogging a user down vs. too little
+          and not satisfying their need.</strong>
+        </p>
+        <h4>3 Rate Result Concepts for Research</h4>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Personalized Rate Range</h5>
+            <p style="margin-bottom: 24px;">Offers a quick, simple "carrot" to give a sense of personalized rates.</p>
+            <img src="/img/earnest/RC/earnest_rc_exp_rateresultsA.png" class="imgshadow mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4">
+            <h5>List of Rate Options</h5>
+            <p style="margin-bottom: 24px;">Delivers a list of rate options they'll be able to select from.</p>
+            <img src="/img/earnest/RC/earnest_rc_exp_rateresultsB.png" class="imgshadow" style="max-width: 100%;">
+          </div>
+          <div class="col-md-4">
+            <h5>Loan Customization Upfront</h5>
+            <p style="margin-bottom: 24px;">Allows users to customize their rate in 3 steps.</p>
+            <video autoplay loop muted playsinline src="/img/Earnest/rc/earnest_rc_exp_rateresultsC.mp4" style="max-width: 100%;"></video>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 
 
+    <div id="research" class="projsection" style="padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">RESEARCH</h5>
+        <h3>What information do applicants need to feel confident applying?</h3>
 
+        <div class="">
+          <p>By taking these 3 concepts into user interviews, we hoped to learn what information they needed to move forward with Earnest, and
+            what the best way of presenting that information might be. Based on our interviews with cosigners, undergraduate students, and graduate students,
+            we learned:
+          </p>
+          <div class="row">
+            <div class="col-md-4" style="padding-right: 40px; padding-bottom: 24px;">
+              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Specifics are necessary</strong></div>
+              Ranges don't cut it. Users need specific rates, terms, and payment types, for it to feel personalized and tangible.
+            </div>
+            <div class="col-md-4" style="padding-right: 40px; padding-bottom: 24px;">
+              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Preferences at the outset</strong></div>
+              Many came in with existing preferences. Rate type preferences were strongest, followed by payment type. Term was fluid.
+            </div>
+            <div class="col-md-4" style="padding-right: 40px; padding-bottom: 24px;">
+              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Selection requires education</strong></div>
+              Most users will be overwhelmed by selecting loan options without educating content.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="refinement" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">CONVERGING ON A SOLUTION</h5>
+        <h3 class="mb-3">Two rate result concepts to test at launch</h3>
+
+        <p style="padding-bottom: 32px;">
+          From the research, it was clear specific, tangible "offers" were necessary for people to feel that the rate results were personalized
+          and useful, but there were mixed messages on how many options were too many. So after some iteration based on our learnings, we decided to
+          move forward with two concepts and A/B test them as part of the feature launch.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Variation A: Curated sample of options</h5>
+            <p>Tests the hypothesis that showing applicants just a few curated options will give them the confidence they need, while keeping them moving.</p>
+            <img src="/img/earnest/RC/rc_varA_mobile.png" class="imgshadow mb-4" style="max-width: 60%;">
+          </div>
+          <div class="col-md-6">
+            <h5>Variation B: Full list of options</h5>
+            <p>Tests the hypothesis that applicants need to see the full list of options they'll be able to select from to feel confident.</p>
+            <img src="/img/earnest/RC/rc_varB_mobile.png" class="imgshadow mb-4" style="max-width: 60%;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="finaldesigns" class="projsection" style="padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">FINAL DESIGNS</h5>
+        <h3 class="mb-2">The Forms</h3>
+        <p class="mb-4">
+          I restructured our forms to enable us to deliver rate estimates via a softpull on the applicant's credit, and shifted the focus of copy
+          from 'checking eligibility' to 'getting your personalized rate'.
+        </p>
+        <div class="row" style="margin-bottom: 48px;">
+          <div class="col-md-3">
+            <img src="/img/earnest/RC/earnest_rc_timeline_phone.png" class="mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <img src="/img/earnest/RC/earnest_rc_softpull1_phone.png" class="mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <img src="/img/earnest/RC/earnest_rc_softpull2_phone.png" class="mb-4" style="max-width: 100%;">
+          </div>
+          <div class="col-md-3">
+            <img src="/img/earnest/RC/earnest_rc_accountcreation_phone.png" class="mb-4" style="max-width: 100%;">
+          </div>
+        </div>
+        <h3 class="mb-2">The Rate Results</h3>
+        <p class="mb-4">
+          The rate result screens were further refined
+        </p>
+        <div class="row" style="margin-bottom: 32px;">
+          <div class="col-md-12">
+            <h5 class="mb-4">Variation A: Curated sample of rate options<h5>
+          </div>
+          <!-- <div class="col-md-12">
+            <img src="/img/earnest/earnest_rc_header.png" style="max-width: 100%;">
+          </div> -->
+          <div class="col-md-3">
+            <img src="/img/earnest/RC/earnest_rc_results1_phone.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-9">
+            <img src="/img/earnest/RC/earnest_rc_results1_laptop.png" class="mb-4" style="max-width: 100%;">
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 48px;">
+          <div class="col-md-12">
+            <h5 class="mb-4">Variation B: Full list of rate options<h5>
+          </div>
+          <div class="col-md-3">
+            <img src="/img/earnest/RC/earnest_rc_results2_phone.png" style="max-width: 100%;">
+          </div>
+          <div class="col-md-9">
+            <img src="/img/earnest/RC/earnest_rc_results2_laptop.png" class="mb-4" style="max-width: 100%;">
+          </div>
+        </div>
+        <h3 class="mb-2">The Softpull Flow</h3>
+        <p class="mb-4">
+          After the applicant fills in their information, we attempt to run a softpull on their credit in order to deliver rate estimates.
+          There are a number of scenarios that can occur that I designed our flow to account for in order to keep the process feeling transparent
+          and seamless to the applicant, and to keep them moving forward.
+        </p>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="/img/earnest/RC/earnest_rc_softpullflow.png" style="max-width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="productstrat" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">PRODUCT STRATEGY</h5>
+        <h3>Designing for incremental implementation</h3>
+
+        <div class="">
+          <p>
+            In order to reduce risk, the rate check implementation was divided into two milestones for incremental release. The first
+            milestone brought rate check to Independent Loans while the second milestone added it to cosigned loans.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="/img/earnest/RC/earnest_rc_productstrat.png" style="max-width: 50%;">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
       </div>
@@ -208,7 +395,7 @@ function closeNav() {
   <div class="">
     <a href="https://www.linkedin.com/in/ben-ewing/" target="blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
     <a href="https://angel.co/benjamin-ewing" target="blank"><i class="fab fa-angellist fa-2x" aria-hidden="true"></i></a>
-    <a href="mailto:ben@bewing.co" target="blank"><i class="far fa-envelope fa-2x" aria-hidden="true"></i></a>
+    <a href="mailto:bewing@hey.com" target="blank"><i class="far fa-envelope fa-2x" aria-hidden="true"></i></a>
   </div>
 </section>
 
