@@ -12,6 +12,11 @@ body, p {
   padding: 0px 8px 0px 8px;
 }
 
+.container-fluid {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 /* 'Inconsolata', monospace; */
 
 h1, h2, h3, h4, h5, h6 {
@@ -298,8 +303,8 @@ h1 span {
 
 .earnestcard {
 
-  background-color: #EBE4F6 !important;
-
+  /* background-color: #EBE4F6 !important; */
+  background: linear-gradient(to bottom right, #bda7de, #EBE4F6);
 }
 
 #craftcard {
@@ -312,11 +317,13 @@ h1 span {
 }
 
 #outschoolcard {
-  background-color: #96A7B9 !important;
+  /* background-color: #96A7B9 !important; */
+  background: linear-gradient(to bottom right, #4c82bf, #9AC1EA);
 }
 
 #pillarcard {
-  background-color: #FFEAEF !important;
+  /* background-color: #FFEAEF !important; */
+  background: linear-gradient(to bottom right, #FF7B9D, #FFC5D5);
 
   img {
     max-width: 95%;
@@ -329,10 +336,9 @@ h1 span {
 
 .card {
   height: 480px;
-  margin-bottom: 16px;
   border: 0px;
   background-color: #f1f1f1;
-  border-radius: 0rem;
+  border-radius: 6px;
   text-align: center;
   color: #ffffff;
 }
@@ -360,6 +366,7 @@ h1 span {
 }
 
 .cardinfo {
+  padding: 16px 0px;
   margin-bottom: 36px;
 }
 
