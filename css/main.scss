@@ -42,6 +42,8 @@ a {
 
 a:hover {
   color: #138395;
+  text-underline-offset: 4px;
+  text-decoration: underline solid 1px;
 }
 
 #projcontent {
@@ -52,10 +54,6 @@ a:hover {
   .container {
     max-width: 960px;
   }
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .imgshadow {
@@ -87,7 +85,7 @@ a:hover {
 
 #cover {
   padding-top: 280px;
-  padding-bottom: 32px;
+  padding-bottom: 216px;
 }
 
 @media screen and (max-width: 490px) {
@@ -151,14 +149,17 @@ a:hover {
     display: none;
   }
 }
+
 /*
-h1 span {
+.navbar-brand:hover {
   background-color: #17A2B8;
   border: solid #17A2B8;
-  border-width: 0px 16px;
-  color: white;
-}
-*/
+  border-width: 0px 0px;
+  color: white !important;
+  border-radius: 2px;
+  transition: .18s ease-in-out;
+} */
+
 #navmenu {
   position: absolute;
   bottom: 5px;
@@ -189,6 +190,12 @@ h1 span {
   padding-left: 1rem !important;
 }
 
+#navbar a:hover {
+  text-decoration: underline solid #17A2B8;
+  text-underline-offset: .3em;
+  text-decoration-thickness: 3px;
+}
+
 .navbar-container {
   display: flex;
   width: 100%;
@@ -211,6 +218,7 @@ h1 span {
   height: 440px;
   overflow: hidden;
   margin-bottom: 40px;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 490px) {
@@ -269,6 +277,11 @@ h1 span {
 
 #portfolioheader{
   margin-bottom: 36px;
+}
+
+h5::after {
+  content: '';
+  border-top: 2px dashed black;
 }
 
 
@@ -768,7 +781,7 @@ h1 span {
 
 .headshot {
   border-radius: 50%;
-  width: 90%;
+  width: 85%;
   transition: .5s;
 }
 
