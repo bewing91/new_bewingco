@@ -30,6 +30,7 @@ h3, h5, h6 {
 
 body {
   font-size: 18px;
+  line-height: 1.6;
 }
 
 .fa-2x {
@@ -126,6 +127,35 @@ a:hover {
 #cover a:hover {
   color: #f1f1f1;
 }
+
+/* Hey I'm Ben animation */
+
+.intro-word:hover {
+  animation: color-animation 2s linear 1;
+}
+
+.intro-word1 {
+  --color-1: #17A2B8;
+}
+
+.intro-word2 {
+  --color-2: #17A2B8;
+}
+
+.intro-word3 {
+  --color-3: #17A2B8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
 /*
 #cover {
   background-image: linear-gradient(0deg,rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url("https://images.all-free-download.com/images/graphiclarge/black_speckle_texture_vector_583162.jpg");
@@ -425,22 +455,6 @@ h5::after {
   margin-bottom: 40px;
 }
 
-@-webkit-keyframes fadeInOut {
-  35%,90% {opacity: 0.5;}
-  0%, 100% {opacity: 1;}
-}
-
-@keyframes fadeInOut {
-  35%,90% {opacity: 0.5;}
-  0%, 100% {opacity: 1;}
-}
-
-.fadeInOut {
-  animation-delay: 1s;
-  -webkit-animation: fadeInOut 12s ease-in-out forwards infinite;
-  animation: fadeInOut 12s ease-in-out forwards infinite;
-}
-
 
 /* Hire section */
 
@@ -584,13 +598,19 @@ h5::after {
   margin-bottom: 16px;
 }
 
+#project_intro h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
 #project_intro:after {
     content: "";
     display: block;
     margin: 0 auto;
     width: 97%;
-    padding-top: 16px;
-    border-bottom: 2px solid black;
+    padding-top: 24px;
+    border-bottom: 1px solid lightgrey;
 }
 
 #project_intro:before {
@@ -598,9 +618,10 @@ h5::after {
     display: block;
     margin: 0 auto;
     width: 97%;
-    padding-bottom: 16px;
-    border-top: 2px solid black;
+    padding-bottom: 24px;
+    border-top: 1px solid lightgrey;
 }
+
 
 
 #solution {
@@ -688,7 +709,7 @@ h5::after {
 /* Casestudy */
 
 .headlines {
-  padding: 48px 0px 48px 0px;
+  padding: 48px 0px 40px 0px;
 }
 
 .casesection {
