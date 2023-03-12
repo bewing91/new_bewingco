@@ -316,7 +316,6 @@ h5::after {
 
 
 .earnestcard {
-
   /* background-color: #EBE4F6 !important; */
   background: linear-gradient(to bottom right, #bda7de, #EBE4F6);
 }
@@ -342,10 +341,6 @@ h5::after {
   img {
     max-width: 95%;
   }
-}
-
-#lisahealthcard {
-  background-color: #728587 !important;
 }
 
 .card {
@@ -376,6 +371,7 @@ h5::after {
 
 .card img {
   max-width: 82%;
+  max-height: 85%;
   margin: auto;
 }
 

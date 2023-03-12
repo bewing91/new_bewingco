@@ -4,7 +4,7 @@
   {% include head.html %}
   <body>
     {% include navbar.html %}
-    <div class="proj_thumb" style=" background: {{ page.bgcolor }};">
+    <div class="proj_thumb" style="background: linear-gradient(to bottom right, {{page.bgcolor1}}, {{page.bgcolor2}});"> 
       <div class="container" style="height: 100%; text-align: center;">
         <img src="{{ site.baseurl }}/img/{{ page.hero_scrn }}" style="max-height: 100%; max-width:100%;">
       </div>
@@ -18,7 +18,6 @@
         </div>
 
         <div id="project_intro" class="row">
-
 
           <div class="col-md-4">
             <div id="results">

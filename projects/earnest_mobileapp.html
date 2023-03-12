@@ -3,9 +3,9 @@ layout: project2
 project_name: Designing a debt repayment mobile app 0 to 1
 company: Earnest
 type: Mobile app
-scope: Sole **Product Designer**, working closely with a Product Manager, UX Researcher, Visual Designer, and team of 6 Engineers.
+scope: Sole **Product Designer**, working with a Product Manager, UX Researcher, and a Lead Engineer.
 tools:
-metrics: In development and projected to launch in Q2 2022.
+metrics: October 2021 to January 2022.
 thumbnail: newlander_projthumb.jpg
 background: Earnest is a technology-enabled student loan lender and refinancer.
 challenge: >
@@ -13,9 +13,10 @@ challenge: >
   support this behavior, **>30% experienced issues** completing their application in this way. I set out to design a flow to accomodate this behavior
   and give these users a smoother experience.
 
-hero_scrn: /earnest/PL/earnest_pl_header.png
+hero_scrn: earnest/mobileapp/MobileApp_header.png
 color: '#1BB580'
-bgcolor: '#EBE4F6'
+bgcolor1: '#bda7de'
+bgcolor2: '#EBE4F6'
 ---
 
 
@@ -24,18 +25,18 @@ bgcolor: '#EBE4F6'
 
     <div class="projsection container" style="padding-bottom: 80px;">
       <h5 style="color: #766F9B;">SELECTED SCREENS</h5>
-      <h3>Mobile mobile mobile</h3>
+      <h3>A comprehensive and interactive way to manage debt</h3>
 
       <div>
         <div class="row">
           <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Role_Selection.png" style="max-width: 100%;">
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/earnest_mobileapp_home_iphone.png" style="max-width: 100%;">
           </div>
           <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Loan_Type.png" style="max-width: 100%;">
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/Payment_Scrn_phone.png" style="max-width: 100%;">
           </div>
           <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Timeline.png" style="max-width: 100%;">
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/Celebrate_Scrn_Phone.png" style="max-width: 100%;">
           </div>
         </div>
       </div>
@@ -44,7 +45,7 @@ bgcolor: '#EBE4F6'
     <div id="challenge" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
 
       <div class="container">
-        <h5 style="color: #766F9B;">THE CHALLENGE</h5>
+        <h5 style="color: #766F9B;">THE WHY</h5>
         <h3>Customer's #1 request was a mobile app; Earnest didn't have one</h3>
 
         <div class="">
@@ -54,40 +55,147 @@ bgcolor: '#EBE4F6'
           </p>
         </div>
       </div>
+
+      <div class="container" style="padding-top: 32px;">
+        <h5 style="color: #766F9B;">THE GOAL</h5>
+        <h3>Identify and design the Northstar vision for the app</h3>
+
+        <div class="">
+          <p>We knew we needed a mobile app to meet user needs and company goals, but what was it? How was it differentiated from competition?
+            This first phase of the project focused on answering these questions and setting a medium term vision for the app.
+          </p>
+        </div>
+      </div>
+
     </div>
 
     <div id="strategy" class="projsection" style="padding-bottom: 56px;">
       <div class="container">
         <h5 style="color: #766F9B;">EXPLORATORY RESEARCH</h5>
-        <h3>Understanding</h3>
+        <h3>Why do users want an app and how would they use it?</h3>
+        <p>To lay a baseline of understanding, we reviewed insights from previous servicing research, conudcted 10 user interviews with
+          users of other loan servicing apps, and surveyed over 600 of our existing users.</p>
 
-        <div class="">
-          <p>Here I will talk about the initial exploratory research and 2 surveys.
-          </p>
+<!--
+        <div class="row" style="margin-bottom: 32px;">
+          <div class="col-md-3 align-items-center">
+            <h5>How We Learned</h5>
+          </div>
+          <div class="col-md-9">
+            <div>
+              <span style="font-weight:600;">1. Existing research</span>
+              <br />Leveraged insights from previous loan servicing research <br />
+            </div>
+            <div style="padding-top:8px;">
+              <span style="font-weight:600;">2. User interviews</span>:
+              <br />Conducted interviews w/ 10 users of loan servicing apps <br />
+            </div>
+            <div style="padding-top:8px;">
+              <span style="font-weight:600;">3. Survey of existing users</span>:
+              <br />Surveyed 600+ current servicing users
+            </div>
+          </div>
         </div>
+
+
+        <div class="row">
+          <div class="col-md-3">
+            <h5>What We Learned: Key Takeaways</h5>
+          </div>
+          <div class="col-md-9">
+            <div>
+              <span style="font-weight:600;">1. Engaging for control</span>
+              <br />People engage most frequently (~3x/month) to check status, make payments, and work towards a sense on control.
+            </div>
+            <div style="padding-top:8px;">
+              <span style="font-weight:600;">2. Mobile app for speed and convenience</span>:
+              <br />People cited speed and convenience a key reason they used mobile apps vs. web.<br />
+            </div>
+            <div style="padding-top:8px;">
+              <span style="font-weight:600;">3. Motivated by a sense of progress</span>:
+              <br />People want to see the progress they’re making towards their goals when logging in.<br />
+            </div>
+            <div style="padding-top:8px;">
+              <span style="font-weight:600;">4. Outstanding balance can be a source of anxiety</span>:
+              <br />While it’s a necessary piece of information, their balance can provoke anxiety.
+            </div>
+          </div>
+        </div>
+-->
+
+        <h5 style="padding-top: 16px; padding-bottom: 16px;">Key Takeaways</h5>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <span style="font-weight:600;">1. Engaging for control</span>
+            <br />People engage most frequently (~3x/month) to check status, make payments, and work towards a sense on control.
+          </div>
+          <div class="col-md-6 mb-3">
+            <span style="font-weight:600;">2. Mobile app for speed and convenience</span>
+            <br />People cited speed and convenience a key reason they used mobile apps vs. web.<br />
+          </div>
+          <div class="col-md-6">
+            <span style="font-weight:600;">3. Motivated by a sense of progress</span>
+            <br />People want to see the progress they’re making towards their goals when logging in.<br />
+          </div>
+          <div class="col-md-6">
+            <span style="font-weight:600;">4. Outstanding balance can be a source of anxiety</span>
+            <br />While it’s a necessary piece of information, their balance can provoke anxiety.
+          </div>
+        </div>
+
+
       </div>
     </div>
 
     <div id="research" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
       <div class="container">
-        <h5 style="color: #766F9B;">RESEARCH</h5>
-        <h3>Understanding why parents take out Parent Loans</h3>
+        <h5 style="color: #766F9B;">EXPLORATION</h5>
+        <h3>Analysis of adjacent fintech apps</h3>
 
         <div class="">
-          <p>Given that we were launching a new loan product, we wanted to have a strong understanding of why parents took Parent Loans,
-            particularly over cosigning a Student Loan. We conducted a round of exploratory research, interviewing 10 parents:
-            5 who took Parent Loans, and 5 who cosigned a Student Loan after considering a Parent Loan. Based on these conversations
-            we learned a couple key things:
-          </p>
-          <div class="row">
-            <div class="col-md-6" style="padding-right: 40px; padding-bottom: 24px;">
-              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Few parents know off the bat that they want parent loans</strong></div>
-              Savvy parents looked for lowest rate regardless of loan type.
-              Others took parent loans as a last resort.
+          <div class="row mb-2" style="width: 67%;">
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/robinhood_logo.png" style="max-width: 100%;">
             </div>
-            <div class="col-md-6" style="padding-right: 40px; padding-bottom: 24px;">
-              <div style="padding-bottom: 8px; color: #1BB580;"><strong>Parents choose cosigned loans to build their child's credit</strong></div>
-              Parents who considered both Parent and Cosigned Loans and went with Cosigned did so to help their child build credit.
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/fedloan_logo.png" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/acorns_logo.png" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/venmo_logo.png" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/splitwise_logo.png" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/creditkarma_logo.png" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/coinbase_logo.png" style="max-width: 100%;">
+            </div>
+            <div class="col-md-3" style="padding-right: 24px; padding-bottom: 16px;">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/logos/truebill_logo.png" style="max-width: 100%;">
+            </div>
+          </div>
+
+          <p>Given that Earnest hadn't a mobile app for a few years, we took this as opportunity to survey the fintech app landscape and ensure
+          that we were up to date on the latest conventions to set up our app up for success.</p>
+
+          <h5 style="padding-top: 16px; padding-bottom: 16px;">Key Takeaways</h5>
+          <div class="row">
+            <div class="col-md-4">
+              <span style="font-weight:600;">1. Content and UI are highly scannable</span>
+              <br />Use of iconography, color blocks, and focal numbers contribute to clear, scannable hierarchy.
+            </div>
+            <div class="col-md-4">
+              <span style="font-weight:600;">2. Frequently used actions are front and center</span>
+              <br />Key actions can often be found in floating action buttons or built into nav menus.<br />
+            </div>
+            <div class="col-md-4">
+              <span style="font-weight:600;"> 3. Touch/FaceID is almost universally offered</span>
+              <br />This made accessing key information quick and frictionless.<br />
             </div>
           </div>
 
@@ -97,30 +205,28 @@ bgcolor: '#EBE4F6'
 
     <div id="architecture" class="projsection" style="padding-bottom: 56px;">
       <div class="container">
-        <h5 style="color: #766F9B;">INFORMATION ARCHITECTURE</h5>
-        <h3>Structuring the application to be quick and clear</h3>
-
-        <p>In order to make the application quick and clear for the parents filling it out, I explored four different
-           flow architectures with various form segmentations. Ultimately we decided to move forward with the <strong>Single Student Form</strong>
-           architecture as it offered clarity with separate forms for each user, without fragmenting the experience too much.
+        <h5 style="color: #766F9B;">DESIGN SPRINT</h5>
+        <h3>Aligning stakeholders on a shared vision</h3>
+        <p>
+          With our insights in hand, we ran a design sprint to align key stakeholders on a vision for the app. This would be a crucial step
+          in making the case to get the resources to build a stand alone team for this initiative. The sprint group included two product managers,
+          our Director of Product Engineering, our Lead Researcher, and Head of Product.
         </p>
         <br />
-        <div class="row">
-          <div class="col-md-3 fadeInOut">
-            <h5 class="mb-4">Arch 1: <br/>Single Form</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_1.png" class="mb-4" style="max-width: 100%;">
-          </div>
-          <div class="col-md-3 fadeInOut">
-            <h5 class="mb-4">Arch 2: <br/>Two Form</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_2.png" class="mb-4" style="max-width: 100%;">
-          </div>
-          <div class="col-md-3">
-            <h5 class="mb-4" style="color: #1BB580;">Arch 3: <br/>Single Student Form</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_3.png" class="mb-4" style="max-width: 100%;">
-          </div>
-          <div class="col-md-3 fadeInOut">
-            <h5 class="mb-4">Arch 4: <br/>One-at-a-Time</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/InfoArch_4.png" class="mb-4" style="max-width: 100%;">
+        <img src="{{ site.baseurl }}/img/earnest/mobileapp/mobile_designsprint.png" style="max-width: 100%;">
+
+        <div style="padding-top: 48px;">
+          <h5 style="color: #766F9B;">SPRINT OUTCOMES</h5>
+          <h3>A goal and a concept</h3>
+          <div class="row">
+            <div class="col-md-7">
+              <h4 class="mb-3">Long term goal</h4>
+              <p style="width:95%;">In 2 years time, Earnest will have an end-to-end visualization of a clients journey to help clients understand their finances -
+              before they start with us, during their time with us, and planning for the next.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="{{ site.baseurl }}/img/earnest/mobileapp/mobile_designsprint_concept.png" style="max-width: 100%;">
+            </div>
           </div>
         </div>
 
@@ -128,34 +234,47 @@ bgcolor: '#EBE4F6'
     </div>
 
 
-    <div id="topoffunnel" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
+    <div class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
 
       <div class="container">
-        <h5 style="color: #766F9B;">EXPLORATION: TOP OF FUNNEL</h5>
-        <h3>How might we make it easy for users to select the right loan for them?</h3>
+        <h5 style="color: #766F9B;">EXPLORATION</h5>
+        <h3>How might we convey a sense of progress?</h3>
 
         <div style="margin-bottom: 32px;">
-          <p>In adding a new loan product to Earnest's offering, I needed to reassess and restructure the top of funnel of our applications to ensure
-            that users were able to select and apply for the right loan. I outlined the personas that needed to be accounted for and explored some architectures
-            for the top of funnel. We ultimately landed on the <strong>Two-Step as the best option</strong> to serve all personas (especially given the
-            breakdown of the personas and additional engineering constraints).</p>
+          <p>After the design sprint, I began to explore some concepts for how we might provide a visual, easy-to-undertand dashboard for their journey,
+          and coalesced on 3 concepts to take into research.</p>
         </div>
         <div class="row">
-          <div class="col-md-3">
-            <h5 class="mb-4" style="color: #1BB580;">Option 1: <br/>Two-Step</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_1.png" class="mb-4" style="max-width: 88%;">
+          <div class="col-md-4">
+            <h5 class="mb-4">Concept 1: Repayment Score</h5>
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/RepaymentScore_phone.png" class="mb-4" style="max-width: 100%;">
           </div>
-          <div class="col-md-3">
-            <h5 class="mb-4">Option 2: <br/>Reverse Two-Step</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_2.png" class="mb-4" style="max-width: 88%;">
+          <div class="col-md-4">
+            <h5 class="mb-4">Concept 2: Interest Saved</h5>
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/InterestSaved_phone.png" class="mb-4" style="max-width: 100%;">
           </div>
-          <div class="col-md-3">
-            <h5 class="mb-4">Option 3: <br/>3 Roles</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_3.png" class="mb-4" style="max-width: 88%;">
+          <div class="col-md-4">
+            <h5 class="mb-4">Concept 3: Paydown</h5>
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/Paydown_phone.png" class="mb-4" style="max-width: 100%;">
           </div>
-          <div class="col-md-3">
-            <h5 class="mb-4">Option 4: <br/>Separated</h5>
-            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_4.png" class="mb-4" style="max-width: 100%;">
+        </div>
+
+        <div style="padding-top: 48px;">
+          <h3>Usability testing Rd.1 takeaways</h3>
+
+          <div class="row">
+            <div class="col-md-4">
+              <span style="font-weight:600;">1. Repayment Score is too abstract</span>
+              <br />While some liked the score, others felt it was too disconnected from their repayment journey and were confused by not having $’s front and center.
+            </div>
+            <div class="col-md-4">
+              <span style="font-weight:600;">2. Interest saved needed to be in context</span>
+              <br />People saw interest saved as a positive sense of progress, but it needed to be anchored in the overall payment journey.<br />
+            </div>
+            <div class="col-md-4">
+              <span style="font-weight:600;"> 3. Paydown preferred for transparency</span>
+              <br />While seeing their balance can be anxiety provoking, having it front and center is preferred.<br />
+            </div>
           </div>
         </div>
 
@@ -164,56 +283,62 @@ bgcolor: '#EBE4F6'
 
     <div id="refinement" class="projsection" style="padding-bottom: 56px;">
       <div class="container">
-        <h5 style="color: #766F9B;">THE SOLUTION</h5>
-        <h3 style="margin-bottom: 40px;">The Form Architecture: Quick and clear</h3>
+        <h5 style="color: #766F9B;">REFINING</h5>
+        <h3 style="margin-bottom: 40px;">Honing in on the Paydown concept</h3>
 
-        <div class="row" style="margin-bottom: 48px;">
-          <div class="col-md-12">
-            <img src="{{ site.baseurl }}/img/earnest/PL/final_arch.png" class="mb-4" style="max-width: 100%;">
-          </div>
-        </div>
-
-        <h3 style="margin-bottom: 40px;">The Top of Funnel: Guiding users to the right loan</h3>
-
-        <!-- <h5 class="mb-4">Top of Funnel Architecture</h5> -->
-        <div class="row" style="margin-bottom: 48px;">
-          <!-- <div class="col-md-4">
-            <img src="{{ site.baseurl }}/img/earnest/PL/tofu_1.png" class="mb-4" style="max-width: 88%;">
-          </div>-->
-          <div class="col-md-12 mb-4" align="center">
-            <video autoplay loop muted playsinline src="{{ site.baseurl }}/img/Earnest/PL/tofu_recording_slow.mp4" style="max-width: 375px;"></video>
-          </div>
-        </div>
-
-        <h3 style="margin-bottom: 40px;">The Application</h3>
         <div class="row">
-          <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Timeline.png" style="max-width: 100%;">
+          <div class="col-md-4">
+            <h5 class="mb-4">Concept 1: Separated</h5>
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/RepaymentScore_phone.png" class="mb-4" style="max-width: 100%;">
           </div>
-          <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/img/earnest/pl/PL_AppStart.png" style="max-width: 100%;">
-          </div>
-          <div class="col-md-4 mb-4">
-            <img src="{{ site.baseurl }}/img/earnest/pl/PL_Results.png" style="max-width: 100%;">
+          <div class="col-md-4">
+            <h5 class="mb-4">Concept 2: Integrated</h5>
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/InterestSaved_phone.png" class="mb-4" style="max-width: 100%;">
           </div>
         </div>
 
+        <div style="padding-top: 48px;">
+          <h3>Usability testing Rd.2 takeaways</h3>
+
+          <div class="row">
+            <div class="col-md-4">
+              <span style="font-weight:600;">1. Interest saved on it’s own confused some</span>
+              <br />While some continued to find Interest saved a motivating concept, others struggled to understand the chart on it’s own.
+            </div>
+            <div class="col-md-4">
+              <span style="font-weight:600;">2. Integrated concept preferred</span>
+              <br />The interactivity of the integrated concept was easiest for people to understand and was more motivating.<br />
+            </div>
+            <div class="col-md-4">
+              <span style="font-weight:600;">3. Payment cards in Integrated concept unclear</span>
+              <br />Some felt the cards were ads. Others found predetermined amounts too rigid.<br />
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
 
-    <div id="challenge" class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
-
+    <div class="projsection" style="background: #F8F6FA; padding-bottom: 56px;">
       <div class="container">
-        <h5 style="color: #766F9B;">OUTCOME</h5>
-        <h3>A successful launch and first season</h3>
+        <h5 style="color: #766F9B;">FINAL NORTHSTAR DESIGN</h5>
+        <h3>A visual, interactive app to manage debt</h3>
 
-        <div class="">
-          <p>The parent loan product launched in June of 2021 and was a big success. It met our loan volume targets for the year and <strong>converted ~60%
-            higher</strong> than our other application flows. The changes to the top of funnel likewise met the goal of not negatively impacting our other
-            application flow conversion rates. Most importantly, Parents were able to cover the cost of their child's education
-            in a way that they hadn't before.
-          </p>
+        <div class="row">
+          <div class="col-md-12 mb-4" align="center">
+            <img src="{{ site.baseurl }}/img/earnest/mobileapp/earnest_mobileapp_home_iphone.png" class="mb-4" style="max-width: 340px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projsection" style="padding-bottom: 56px;">
+      <div class="container">
+        <h5 style="color: #766F9B;">NEXT STEPS</h5>
+        <h3>Paring back for an MVP</h3>
+        <div>
+          With a northstar vision set and stakeholders aligned across the company, we began the process of determining what was feasible
+          for our MVP and developing a roadmap of functionality that would come in later versions.
         </div>
       </div>
     </div>
